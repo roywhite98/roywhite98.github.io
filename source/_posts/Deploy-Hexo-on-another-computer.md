@@ -15,3 +15,5 @@ hexo branch放源码
 5. 在新电脑上推送源码到hexo branch，生成的静态页面仍推送到main branch，就是这么神奇
 6. 使用git add . && git commit -m "message" && git push 更新源文件
 7. 使用hexo clean && hexo g && hexo d推送静态到main
+8. 然后报了个错，看了一下主题文件夹是空的，copy一下主题过来，hexo d，完成
+9. 每次使用前pull一下以保证同步
