@@ -1,7 +1,7 @@
 ---
 title: Deploy Hexo on another computer
 date: 2023-06-04 18:41:37
-tags:
+tags: 气宗, 工欲善其事
 ---
 在另一台电脑上部署一下Hexo。
 利用git分支来同步hexo。
