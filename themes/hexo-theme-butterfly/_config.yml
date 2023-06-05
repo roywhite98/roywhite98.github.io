@@ -22,7 +22,7 @@ menu:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: darker #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -46,6 +46,8 @@ favicon: /img/favicon.png
 avatar:
   img: /img/400.gif
   effect: false
+
+top_img: 'linear-gradient(50deg, #0062be, #925696, #cc426e, #fb0347)'
 
 # Disable all banner image
 disable_top_img: false
@@ -640,7 +642,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: /img/wallpaper.png
+background: wallpaper.png
 
 # Footer Background
 footer_bg: false
@@ -742,7 +744,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Customize typed.js (配置typed.js)
@@ -757,6 +759,7 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
+  - Cyber farming, dual practice of sword and magic
 
 # Loading Animation (加載動畫)
 preloader:
