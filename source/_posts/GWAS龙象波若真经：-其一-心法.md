@@ -1,5 +1,5 @@
 ---
-title: GWAS龙象波若真经：(其一)心法
+title: GWAS龙象般若真经：(其一)心法
 date: 2023-06-05 14:13:34
 tags: 
 - 气宗
@@ -14,7 +14,7 @@ GWAS，Genome wide association study.
 
 **基因型 genotype：**  
 一个生物体内DNA所包含的基因。指的是一个个体所有等位基因的所有基因座上的所有组合。
-表现型/表型 Phenotype：
+**表现型/表型 Phenotype：**
 个体实际外表特征。
 
 **基因型和表型的关系：**  
