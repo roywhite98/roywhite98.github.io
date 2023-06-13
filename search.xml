@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>CV吸星大法（二）：卷积神经网络CNN</title>
-    <url>/2023/06/13/CV%E5%90%B8%E6%98%9F%E5%A4%A7%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9CCNN/</url>
+    <url>/posts/51dcf902.html</url>
     <content><![CDATA[<h2 id="先去看书！先去看书！先去看书！"><a href="#先去看书！先去看书！先去看书！" class="headerlink" title="先去看书！先去看书！先去看书！"></a>先去看书！先去看书！先去看书！</h2><p><a href="https://github.com/exacity/deeplearningbook-chinese">Deeplearningbook中文版</a><br><a href="https://github.com/ionvision/DeepLearningCourseCodes">github上的相关课程</a></p>
 <h2 id="急功近利，先看U-Net"><a href="#急功近利，先看U-Net" class="headerlink" title="急功近利，先看U-Net"></a>急功近利，先看U-Net</h2><p>虽然讲说基础不牢地动山摇，但人生苦短。<br>反正我也是来做图像分割的，那先从图像分割倒序学习也没什么问题吧。</p>
 <p><a href="https://arxiv.org/pdf/1505.04597v1.pdf">遇事不决先看U-Net原文</a></p>
@@ -67,29 +67,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Deploy Hexo on another computer</title>
-    <url>/2023/06/04/Deploy-Hexo-on-another-computer/</url>
-    <content><![CDATA[<p>在另一台电脑上部署一下Hexo。<br>利用git分支来同步hexo。<br>main branch放静态页面文件<br>hexo branch放源码</p>
-<ol>
-<li>设置hexo branch为default branch</li>
-<li>在老电脑上push源文件到hexo branch</li>
-<li>在新电脑上clone hexo branch到本地</li>
-<li>在新电脑上安装hexo环境</li>
-<li>在新电脑上推送源码到hexo branch，生成的静态页面仍推送到main branch，就是这么神奇</li>
-<li>使用git add . &amp;&amp; git commit -m “message” &amp;&amp; git push 更新源文件</li>
-<li>使用hexo clean &amp;&amp; hexo g &amp;&amp; hexo d推送静态到main</li>
-<li>然后报了个错，看了一下主题文件夹是空的，copy一下主题过来，hexo d，完成</li>
-<li>每次使用前pull一下以保证同步</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>气宗</tag>
-        <tag>工欲善其事</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CV吸星大法（一）：卷积神经网络CNN</title>
-    <url>/2023/06/07/CV%E5%90%B8%E6%98%9F%E5%A4%A7%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9CCNN/</url>
+    <url>/posts/9cab57d6.html</url>
     <content><![CDATA[<h2 id="先整个原理！惯例，先上名词解释"><a href="#先整个原理！惯例，先上名词解释" class="headerlink" title="先整个原理！惯例，先上名词解释"></a>先整个原理！惯例，先上名词解释</h2><p><strong>人工神经网络（Aritificial Neural Network, ANN）</strong><br>简称神经网络（Neural Network, NN），简称神经网络。在机器学习和认知科学领域，是一种模仿生物神经网络（动物的中枢神经系统，特别是大脑）的结构和功能的数学模型或计算模型，用于对函数进行估计或近似。神经网络由大量的人工神经元联结进行计算。大多数情况下人工神经网络能在外界信息的基础上改变内部结构，是一种自适应系统，通俗地讲就是具备学习功能。<br>现代神经网络是一种非线性统计性数据建模工具，神经网络通常是通过一个基于数学统计学类型的学习方法（Learning Method）得以优化，所以也是数学统计学方法的一种实际应用，通过统计学的标准数学方法我们能够得到大量的可以用函数来表达的局部结构空间，另一方面在人工智能学的人工感知领域，我们通过数学统计学的应用可以来做人工感知方面的决定问题（也就是说通过统计学的方法，人工神经网络能够类似人一样具有简单的决定能力和简单的判断能力），这种方法比起正式的逻辑学推理演算更具有优势。</p>
 <p>和其他机器学习方法一样，神经网络已经被用于解决各种各样的问题，例如机器视觉和语音识别。这些问题都是很难被传统基于规则的编程所解决的。</p>
 <p>在人工神经网络中，简单的人工节点，称作神经元（neurons）</p>
@@ -181,8 +160,29 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Deploy Hexo on another computer</title>
+    <url>/posts/2567506c.html</url>
+    <content><![CDATA[<p>在另一台电脑上部署一下Hexo。<br>利用git分支来同步hexo。<br>main branch放静态页面文件<br>hexo branch放源码</p>
+<ol>
+<li>设置hexo branch为default branch</li>
+<li>在老电脑上push源文件到hexo branch</li>
+<li>在新电脑上clone hexo branch到本地</li>
+<li>在新电脑上安装hexo环境</li>
+<li>在新电脑上推送源码到hexo branch，生成的静态页面仍推送到main branch，就是这么神奇</li>
+<li>使用git add . &amp;&amp; git commit -m “message” &amp;&amp; git push 更新源文件</li>
+<li>使用hexo clean &amp;&amp; hexo g &amp;&amp; hexo d推送静态到main</li>
+<li>然后报了个错，看了一下主题文件夹是空的，copy一下主题过来，hexo d，完成</li>
+<li>每次使用前pull一下以保证同步</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>气宗</tag>
+        <tag>工欲善其事</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GWAS龙象般若真经：（其一）方法原理</title>
-    <url>/2023/06/05/GWAS%E9%BE%99%E8%B1%A1%E6%B3%A2%E8%8B%A5%E7%9C%9F%E7%BB%8F%EF%BC%9A%EF%BC%88%E5%85%B6%E4%B8%80%EF%BC%89%E6%96%B9%E6%B3%95%E5%8E%9F%E7%90%86/</url>
+    <url>/posts/d0974096.html</url>
     <content><![CDATA[<p>GWAS，Genome wide association study.<br>中文名 全基因组关联分析。<br><a href="#bukan">太长不看版</a></p>
 <p><strong>遗传标记（genetic marker）：</strong><br>已知染色体位置的一种序列或基因。在生物个体间有差异因此可用于鉴别个体或物种。其可被描述为可观测的变异。</p>
 <p><strong>基因型 genotype：</strong><br>一个生物体内DNA所包含的基因。指的是一个个体所有等位基因的所有基因座上的所有组合。<br><strong>表现型&#x2F;表型 Phenotype：</strong><br>个体实际外表特征。</p>
@@ -270,7 +270,7 @@
   </entry>
   <entry>
     <title>GWAS龙象般若真经：（其二）流程原理</title>
-    <url>/2023/06/05/GWAS%E9%BE%99%E8%B1%A1%E8%88%AC%E8%8B%A5%E7%9C%9F%E7%BB%8F%EF%BC%9A%EF%BC%88%E5%85%B6%E4%BA%8C%EF%BC%89%E6%B5%81%E7%A8%8B%E5%8E%9F%E7%90%86/</url>
+    <url>/posts/c698f62e.html</url>
     <content><![CDATA[<p>习武先修心。缄舌静，抱神定。<br>做实验前先装十分钟枪头，灭一灭台子。<br>做分析前，也先整理整理思路，泡杯茶或者咖啡。</p>
 <p>上篇说到GWAS关联表型和性状。<br>那遗传标记和手上的群体是最重要的材料。<br>此即该法阴阳两极，调和则生，紊乱则死。</p>
 <h2 id="阴极-遗传标记"><a href="#阴极-遗传标记" class="headerlink" title="阴极-遗传标记"></a>阴极-遗传标记</h2><p>遗传标记从何而来？</p>
@@ -334,7 +334,7 @@
   </entry>
   <entry>
     <title>Install Nodejs &amp; npm on CentOS</title>
-    <url>/2023/06/04/Install-Nodejs-npm-on-CentOS/</url>
+    <url>/posts/1b1c601.html</url>
     <content><![CDATA[<span id="more"></span>
 <p>要用jupyter插件离不开JavaScript。<br>那要用JS就得装Node.js和npm。<br>那装吧。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://npmmirror.com/mirrors/node/v18.16.0/node-v18.16.0-linux-x64.tar.xz</span><br><span class="line">tar -xvf node-v18.16.0-linux-x64.tar.gz</span><br></pre></td></tr></table></figure>
@@ -361,8 +361,16 @@
       </tags>
   </entry>
   <entry>
+    <title>A personal site basing on github</title>
+    <url>/posts/a59c950b.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>条件概率</title>
-    <url>/2023/06/04/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/</url>
+    <url>/posts/25dc542d.html</url>
     <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
 <p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
 ]]></content>
@@ -372,7 +380,7 @@
   </entry>
   <entry>
     <title>概率的性质</title>
-    <url>/2023/06/04/%E6%A6%82%E7%8E%87%E7%9A%84%E6%80%A7%E8%B4%A8/</url>
+    <url>/posts/506cea2e.html</url>
     <content><![CDATA[<ol>
 <li>可加性、2. 连续性、3. 单调性<br><strong>加法公式</strong><br>对任意两个事件A、B，有：<br>$$P(A \cup B) &#x3D; P(A) + P(A) -P(AB)$$<br>一般地，对于任意n个事件$A_1,A_2,\dots,A_n,$有：<br>$$P\left( \bigcup^n_{i&#x3D;1}A_i\right) &#x3D; \sum_{i&#x3D;1}^nP(A_i)-\sum_{1\leq i &lt; j \le n }P(A_iA_j) + \sum_{1\leq i &lt; j  &lt; k \le n }P(A_iA_jA_k) + \dots + (-1)^{n-1}P(A_1A_2\dots A_n)$$<br>半可加性：<br>对任意两个事件，有：<br>$$P(A \cup B) \leq P(A) + P(B)$$</li>
 </ol>
@@ -382,16 +390,8 @@
       </tags>
   </entry>
   <entry>
-    <title>A personal site basing on github</title>
-    <url>/2023/06/05/hello-world/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
-]]></content>
-  </entry>
-  <entry>
     <title>= =|||死都不输出的awk</title>
-    <url>/2023/06/04/%E6%AD%BB%E9%83%BD%E4%B8%8D%E8%BE%93%E5%87%BA%E7%9A%84awk/</url>
+    <url>/posts/12b473ed.html</url>
     <content><![CDATA[<span id="more"></span>
 
 <p>在用JupyterLab做查字典的时候，发现死都不输出，给ChatGPT验代码能通过，跑demo能通过。</p>
@@ -404,7 +404,7 @@
   </entry>
   <entry>
     <title>配置JupyterLab</title>
-    <url>/2023/06/04/%E9%85%8D%E7%BD%AEJupyterLab/</url>
+    <url>/posts/c7d42074.html</url>
     <content><![CDATA[<span id="more"></span>
 
 <p>嘛，要用服务器很麻烦的啦。<br>还得是JupyterLab。<br>我就在自己账户下配置了jupyterlab。轻松愉快。</p>
