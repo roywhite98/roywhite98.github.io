@@ -425,4 +425,11 @@
         <tag>气宗</tag>
       </tags>
   </entry>
+  <entry>
+    <title>conda env下没有python</title>
+    <url>/posts/7e7d79c3.html</url>
+    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
+<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
+]]></content>
+  </entry>
 </search>
