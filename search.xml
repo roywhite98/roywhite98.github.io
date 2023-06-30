@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>conda env下没有python</title>
-    <url>/posts/7e7d79c3.html</url>
-    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
-<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
-]]></content>
-  </entry>
-  <entry>
     <title>CV吸星大法（二）：卷积神经网络CNN</title>
     <url>/posts/51dcf902.html</url>
     <content><![CDATA[<h2 id="先去看书！先去看书！先去看书！"><a href="#先去看书！先去看书！先去看书！" class="headerlink" title="先去看书！先去看书！先去看书！"></a>先去看书！先去看书！先去看书！</h2><p><a href="https://github.com/exacity/deeplearningbook-chinese">Deeplearningbook中文版</a><br><a href="https://github.com/ionvision/DeepLearningCourseCodes">github上的相关课程</a></p>
@@ -69,9 +62,16 @@
 </ol>
 ]]></content>
       <tags>
-        <tag>内功</tag>
         <tag>气宗</tag>
+        <tag>内功</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>conda env下没有python</title>
+    <url>/posts/7e7d79c3.html</url>
+    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
+<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
+]]></content>
   </entry>
   <entry>
     <title>深度神经网络名词解释</title>
@@ -87,6 +87,12 @@
     <title>为什么向量化计算？</title>
     <url>/posts/8b99bfe9.html</url>
     <content><![CDATA[<p>向量化计算可以避免显式的for循环，<br>这样可以更好发挥CPU或者GPU的并行计算能力，从而极大提高计算效率。<br>所以线性代数是个好东西，本科是人都得学真是高瞻远瞩。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>小无相功：pytorch</title>
+    <url>/posts/89838bc0.html</url>
+    <content><![CDATA[<p>看官网呗还等着我写推教学吗？</p>
 ]]></content>
   </entry>
   <entry>
@@ -204,12 +210,6 @@
       </tags>
   </entry>
   <entry>
-    <title>小无相功：pytorch</title>
-    <url>/posts/89838bc0.html</url>
-    <content><![CDATA[<p>看官网呗还等着我写推教学吗？</p>
-]]></content>
-  </entry>
-  <entry>
     <title>GWAS龙象般若真经：（其一）方法原理</title>
     <url>/posts/d0974096.html</url>
     <content><![CDATA[<p>GWAS，Genome wide association study.<br>中文名 全基因组关联分析。<br><a href="#bukan">太长不看版</a></p>
@@ -293,8 +293,8 @@
 <p>2.根据该位点在基因组中的位置和连锁不平衡关系推测可能的疾病易感基因. </p>
 ]]></content>
       <tags>
-        <tag>内功</tag>
         <tag>气宗</tag>
+        <tag>内功</tag>
       </tags>
   </entry>
   <entry>
@@ -357,17 +357,9 @@
 <h2 id="阳极-群体材料"><a href="#阳极-群体材料" class="headerlink" title="阳极-群体材料"></a>阳极-群体材料</h2><h3 id="材料种类"><a href="#材料种类" class="headerlink" title="材料种类"></a>材料种类</h3><p>F2群体，自然群体，核心种质</p>
 ]]></content>
       <tags>
-        <tag>内功</tag>
         <tag>气宗</tag>
+        <tag>内功</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>A personal site basing on github</title>
-    <url>/posts/a59c950b.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
-]]></content>
   </entry>
   <entry>
     <title>Install Nodejs &amp; npm on CentOS</title>
@@ -398,6 +390,24 @@
       </tags>
   </entry>
   <entry>
+    <title>A personal site basing on github</title>
+    <url>/posts/a59c950b.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>条件概率</title>
+    <url>/posts/25dc542d.html</url>
+    <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
+<p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
+]]></content>
+      <tags>
+        <tag>内力</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>概率的性质</title>
     <url>/posts/506cea2e.html</url>
     <content><![CDATA[<ol>
@@ -409,13 +419,16 @@
       </tags>
   </entry>
   <entry>
-    <title>条件概率</title>
-    <url>/posts/25dc542d.html</url>
-    <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
-<p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
+    <title>= =|||死都不输出的awk</title>
+    <url>/posts/12b473ed.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<p>在用JupyterLab做查字典的时候，发现死都不输出，给ChatGPT验代码能通过，跑demo能通过。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">awk &#x27;NR==FNR&#123;a[$3]=$0;next&#125; NR&gt;FNR&#123;if($1 in a) print a[$1]&#125;&#x27; file1 file2 &gt; file3</span><br></pre></td></tr></table></figure>
+<p>但就是死都不输出，挨个换输入文件发现问题出在字典里。<br>字典是直接从电脑通过JupyterLab拷贝过去的。可能出了和^M那个一样的莫名奇妙的问题。所以手动复制一个副本，愉快跑通。</p>
 ]]></content>
       <tags>
-        <tag>内力</tag>
+        <tag>气宗</tag>
       </tags>
   </entry>
   <entry>
@@ -436,19 +449,6 @@
 会给一个网址，复制token填进去。</li>
 </ol>
 <p>关掉就kill掉jupyter进程就好了。</p>
-]]></content>
-      <tags>
-        <tag>气宗</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>= =|||死都不输出的awk</title>
-    <url>/posts/12b473ed.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<p>在用JupyterLab做查字典的时候，发现死都不输出，给ChatGPT验代码能通过，跑demo能通过。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">awk &#x27;NR==FNR&#123;a[$3]=$0;next&#125; NR&gt;FNR&#123;if($1 in a) print a[$1]&#125;&#x27; file1 file2 &gt; file3</span><br></pre></td></tr></table></figure>
-<p>但就是死都不输出，挨个换输入文件发现问题出在字典里。<br>字典是直接从电脑通过JupyterLab拷贝过去的。可能出了和^M那个一样的莫名奇妙的问题。所以手动复制一个副本，愉快跑通。</p>
 ]]></content>
       <tags>
         <tag>气宗</tag>
