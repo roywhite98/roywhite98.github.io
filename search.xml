@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>conda env下没有python</title>
+    <url>/posts/7e7d79c3.html</url>
+    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
+<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
+]]></content>
+  </entry>
+  <entry>
     <title>CV吸星大法（二）：卷积神经网络CNN</title>
     <url>/posts/51dcf902.html</url>
     <content><![CDATA[<h2 id="先去看书！先去看书！先去看书！"><a href="#先去看书！先去看书！先去看书！" class="headerlink" title="先去看书！先去看书！先去看书！"></a>先去看书！先去看书！先去看书！</h2><p><a href="https://github.com/exacity/deeplearningbook-chinese">Deeplearningbook中文版</a><br><a href="https://github.com/ionvision/DeepLearningCourseCodes">github上的相关课程</a></p>
@@ -67,13 +74,6 @@
       </tags>
   </entry>
   <entry>
-    <title>conda env下没有python</title>
-    <url>/posts/7e7d79c3.html</url>
-    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
-<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
-]]></content>
-  </entry>
-  <entry>
     <title>深度神经网络名词解释</title>
     <url>/posts/85c7aca4.html</url>
     <content><![CDATA[<p><strong>反向传播</strong>（英语：Backpropagation，意为误差反向传播，缩写为BP）<br>是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。</p>
@@ -84,15 +84,15 @@
 ]]></content>
   </entry>
   <entry>
-    <title>为什么向量化计算？</title>
-    <url>/posts/8b99bfe9.html</url>
-    <content><![CDATA[<p>向量化计算可以避免显式的for循环，<br>这样可以更好发挥CPU或者GPU的并行计算能力，从而极大提高计算效率。<br>所以线性代数是个好东西，本科是人都得学真是高瞻远瞩。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>小无相功：pytorch</title>
     <url>/posts/89838bc0.html</url>
     <content><![CDATA[<p>看官网呗还等着我写推教学吗？</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>为什么向量化计算？</title>
+    <url>/posts/8b99bfe9.html</url>
+    <content><![CDATA[<p>向量化计算可以避免显式的for循环，<br>这样可以更好发挥CPU或者GPU的并行计算能力，从而极大提高计算效率。<br>所以线性代数是个好东西，本科是人都得学真是高瞻远瞩。</p>
 ]]></content>
   </entry>
   <entry>
