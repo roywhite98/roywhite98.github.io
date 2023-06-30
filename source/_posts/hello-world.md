@@ -1,5 +1,6 @@
 ---
 title: A personal site basing on github
+abbrlink: a59c950b
 ---
 
 <!-- more -->

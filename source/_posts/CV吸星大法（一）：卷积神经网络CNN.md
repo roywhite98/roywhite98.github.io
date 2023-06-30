@@ -1,5 +1,6 @@
 ---
 title: CV吸星大法（一）：卷积神经网络CNN
+abbrlink: 9cab57d6
 tags:
 ---
 ## 先整个原理！惯例，先上名词解释

@@ -1,9 +1,10 @@
 ---
 title: Install Nodejs & npm on CentOS
+tags:
+  - 气宗
+  - 工欲善其事
+abbrlink: 1b1c601
 date: 2023-06-04 19:45:06
-tags: 
-- 气宗
-- 工欲善其事
 ---
 <!--more-->
 要用jupyter插件离不开JavaScript。

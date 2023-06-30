@@ -1,7 +1,8 @@
 ---
 title: 配置JupyterLab
-date: 2023-06-04 19:50:37
 tags: 气宗
+abbrlink: c7d42074
+date: 2023-06-04 19:50:37
 ---
 <!--more-->
 

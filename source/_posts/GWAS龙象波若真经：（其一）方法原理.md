@@ -1,9 +1,10 @@
 ---
 title: GWAS龙象般若真经：（其一）方法原理
+tags:
+  - 气宗
+  - 内功
+abbrlink: d0974096
 date: 2023-06-05 14:13:34
-tags: 
-- 气宗
-- 内功
 ---
 GWAS，Genome wide association study.  
 中文名 全基因组关联分析。  
