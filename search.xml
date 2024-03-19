@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>conda env下没有python</title>
-    <url>/posts/7e7d79c3.html</url>
-    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
-<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
+    <title>深度神经网络名词解释</title>
+    <url>/posts/85c7aca4.html</url>
+    <content><![CDATA[<p><strong>反向传播</strong>（英语：Backpropagation，意为误差反向传播，缩写为BP）<br>是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。</p>
+<p><strong>张量</strong>（英语：Tensor）是一个可用来表示在一些向量、标量和其他张量之间的线性关系的多线性函数，这些线性关系的基本例子有内积、外积、线性映射以及笛卡儿积。其坐标在$n$维空间内，有$n^r$个分量的一种量，其中每个分量都是坐标的函数，而在坐标变换时，这些分量也依照某些规则作线性变换。$r$称为该张量的秩或阶（与矩阵的秩和阶均无关系）。</p>
+<p><strong>支持向量机</strong>（英语：support vector machine，常简称为SVM，又名支持向量网络）是在分类与回归分析中分析数据的监督式学习模型与相关的学习算法。给定一组训练实例，每个训练实例被标记为属于两个类别中的一个或另一个，SVM训练算法创建一个将新的实例分配给两个类别之一的模型，使其成为非概率二元线性分类器。SVM模型是将实例表示为空间中的点，这样映射就使得单独类别的实例被尽可能宽的明显的间隔分开。然后，将新的实例映射到同一空间，并基于它们落在间隔的哪一侧来预测所属类别。  </p>
+<p>除了进行线性分类之外，SVM还可以使用所谓的核技巧有效地进行非线性分类，将其输入隐式映射到高维特征空间中。</p>
+<p>当数据未被标记时，不能进行监督式学习，需要用非监督式学习，它会尝试找出数据到簇的自然聚类，并将新数据映射到这些已形成的簇。将支持向量机改进的聚类算法被称为支持向量聚类，当数据未被标记或者仅一些数据被标记时，支持向量聚类经常在工业应用中用作分类步骤的预处理。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>小无相功：pytorch</title>
+    <url>/posts/89838bc0.html</url>
+    <content><![CDATA[<p>看官网呗还等着我写推教学吗？</p>
 ]]></content>
   </entry>
   <entry>
@@ -72,22 +81,6 @@
         <tag>气宗</tag>
         <tag>内功</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>深度神经网络名词解释</title>
-    <url>/posts/85c7aca4.html</url>
-    <content><![CDATA[<p><strong>反向传播</strong>（英语：Backpropagation，意为误差反向传播，缩写为BP）<br>是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。</p>
-<p><strong>张量</strong>（英语：Tensor）是一个可用来表示在一些向量、标量和其他张量之间的线性关系的多线性函数，这些线性关系的基本例子有内积、外积、线性映射以及笛卡儿积。其坐标在$n$维空间内，有$n^r$个分量的一种量，其中每个分量都是坐标的函数，而在坐标变换时，这些分量也依照某些规则作线性变换。$r$称为该张量的秩或阶（与矩阵的秩和阶均无关系）。</p>
-<p><strong>支持向量机</strong>（英语：support vector machine，常简称为SVM，又名支持向量网络）是在分类与回归分析中分析数据的监督式学习模型与相关的学习算法。给定一组训练实例，每个训练实例被标记为属于两个类别中的一个或另一个，SVM训练算法创建一个将新的实例分配给两个类别之一的模型，使其成为非概率二元线性分类器。SVM模型是将实例表示为空间中的点，这样映射就使得单独类别的实例被尽可能宽的明显的间隔分开。然后，将新的实例映射到同一空间，并基于它们落在间隔的哪一侧来预测所属类别。  </p>
-<p>除了进行线性分类之外，SVM还可以使用所谓的核技巧有效地进行非线性分类，将其输入隐式映射到高维特征空间中。</p>
-<p>当数据未被标记时，不能进行监督式学习，需要用非监督式学习，它会尝试找出数据到簇的自然聚类，并将新数据映射到这些已形成的簇。将支持向量机改进的聚类算法被称为支持向量聚类，当数据未被标记或者仅一些数据被标记时，支持向量聚类经常在工业应用中用作分类步骤的预处理。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>小无相功：pytorch</title>
-    <url>/posts/89838bc0.html</url>
-    <content><![CDATA[<p>看官网呗还等着我写推教学吗？</p>
-]]></content>
   </entry>
   <entry>
     <title>为什么向量化计算？</title>
@@ -195,6 +188,13 @@
 <p>（前向传播阶段）将训练输入送入网络以获得预测结果；<br>（反向传播阶段）对预测结果同训练目标求差(损失函数)。<br>第2阶段：权重更新<br>对于每个突触上的权重，按照以下步骤进行更新：</p>
 <p>将输入激励和响应误差相乘，从而获得权重的梯度；<br>将这个梯度乘上一个比例并取反后加到权重上。<br>这个比例（百分比）将会影响到训练过程的速度和效果，因此成为“训练因子”。梯度的方向指明了误差扩大的方向，因此在更新权重的时候需要对其取反，从而减小权重引起的误差。</p>
 <p>第 1 和第 2 阶段可以反复循环迭代，直到网络对输入的响应达到满意的预定的目标范围为止。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>conda env下没有python</title>
+    <url>/posts/7e7d79c3.html</url>
+    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
+<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
 ]]></content>
   </entry>
   <entry>
@@ -375,6 +375,14 @@
       </tags>
   </entry>
   <entry>
+    <title>A personal site basing on github</title>
+    <url>/posts/a59c950b.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Install Nodejs &amp; npm on CentOS</title>
     <url>/posts/1b1c601.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -403,12 +411,14 @@
       </tags>
   </entry>
   <entry>
-    <title>A personal site basing on github</title>
-    <url>/posts/a59c950b.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
+    <title>条件概率</title>
+    <url>/posts/25dc542d.html</url>
+    <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
+<p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
 ]]></content>
+      <tags>
+        <tag>内力</tag>
+      </tags>
   </entry>
   <entry>
     <title>概率的性质</title>
@@ -416,16 +426,6 @@
     <content><![CDATA[<ol>
 <li>可加性、2. 连续性、3. 单调性<br><strong>加法公式</strong><br>对任意两个事件A、B，有：<br>$$P(A \cup B) &#x3D; P(A) + P(A) -P(AB)$$<br>一般地，对于任意n个事件$A_1,A_2,\dots,A_n,$有：<br>$$P\left( \bigcup^n_{i&#x3D;1}A_i\right) &#x3D; \sum_{i&#x3D;1}^nP(A_i)-\sum_{1\leq i &lt; j \le n }P(A_iA_j) + \sum_{1\leq i &lt; j  &lt; k \le n }P(A_iA_jA_k) + \dots + (-1)^{n-1}P(A_1A_2\dots A_n)$$<br>半可加性：<br>对任意两个事件，有：<br>$$P(A \cup B) \leq P(A) + P(B)$$</li>
 </ol>
-]]></content>
-      <tags>
-        <tag>内力</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>条件概率</title>
-    <url>/posts/25dc542d.html</url>
-    <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
-<p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
 ]]></content>
       <tags>
         <tag>内力</tag>
