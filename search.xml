@@ -1,6 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>conda env下没有python</title>
+    <url>/posts/7e7d79c3.html</url>
+    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
+<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>深度神经网络名词解释</title>
+    <url>/posts/85c7aca4.html</url>
+    <content><![CDATA[<p><strong>反向传播</strong>（英语：Backpropagation，意为误差反向传播，缩写为BP）<br>是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。</p>
+<p><strong>张量</strong>（英语：Tensor）是一个可用来表示在一些向量、标量和其他张量之间的线性关系的多线性函数，这些线性关系的基本例子有内积、外积、线性映射以及笛卡儿积。其坐标在$n$维空间内，有$n^r$个分量的一种量，其中每个分量都是坐标的函数，而在坐标变换时，这些分量也依照某些规则作线性变换。$r$称为该张量的秩或阶（与矩阵的秩和阶均无关系）。</p>
+<p><strong>支持向量机</strong>（英语：support vector machine，常简称为SVM，又名支持向量网络）是在分类与回归分析中分析数据的监督式学习模型与相关的学习算法。给定一组训练实例，每个训练实例被标记为属于两个类别中的一个或另一个，SVM训练算法创建一个将新的实例分配给两个类别之一的模型，使其成为非概率二元线性分类器。SVM模型是将实例表示为空间中的点，这样映射就使得单独类别的实例被尽可能宽的明显的间隔分开。然后，将新的实例映射到同一空间，并基于它们落在间隔的哪一侧来预测所属类别。  </p>
+<p>除了进行线性分类之外，SVM还可以使用所谓的核技巧有效地进行非线性分类，将其输入隐式映射到高维特征空间中。</p>
+<p>当数据未被标记时，不能进行监督式学习，需要用非监督式学习，它会尝试找出数据到簇的自然聚类，并将新数据映射到这些已形成的簇。将支持向量机改进的聚类算法被称为支持向量聚类，当数据未被标记或者仅一些数据被标记时，支持向量聚类经常在工业应用中用作分类步骤的预处理。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>小无相功：pytorch</title>
+    <url>/posts/89838bc0.html</url>
+    <content><![CDATA[<p>看官网呗还等着我写推教学吗？</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>vscode不能正确切换conda环境</title>
+    <url>/posts/3a308af5.html</url>
+    <content><![CDATA[<p>vscode有个插件叫code runner，非常好看，比控制台直接输出好看多了。<br>控制台嘛就直接conda activate进去就好，虽然我的默认控制台是powershell进不去会报错，但是只要切换称cmd控制台就没什么问题了。<br>code runner死都切换不了，怎么处理呢，很简单，<br>在cmd中先进入目标conda环境，然后用命令启动：<code>code .</code><br>这样就能运行了。</p>
+]]></content>
+      <tags>
+        <tag>工欲善其事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么向量化计算？</title>
+    <url>/posts/8b99bfe9.html</url>
+    <content><![CDATA[<p>向量化计算可以避免显式的for循环，<br>这样可以更好发挥CPU或者GPU的并行计算能力，从而极大提高计算效率。<br>所以线性代数是个好东西，本科是人都得学真是高瞻远瞩。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>GWAS龙象般若真经：（其一）方法原理</title>
+    <url>/posts/d0974096.html</url>
+    <content><![CDATA[<p>GWAS，Genome wide association study.<br>中文名 全基因组关联分析。<br><a href="#bukan">太长不看版</a></p>
+<p><strong>遗传标记（genetic marker）：</strong><br>已知染色体位置的一种序列或基因。在生物个体间有差异因此可用于鉴别个体或物种。其可被描述为可观测的变异。</p>
+<p><strong>基因型 genotype：</strong><br>一个生物体内DNA所包含的基因。指的是一个个体所有等位基因的所有基因座上的所有组合。<br><strong>表现型&#x2F;表型 Phenotype：</strong><br>个体实际外表特征。</p>
+<p><strong>基因型和表型的关系：</strong><br>基因型对表型有很大影响，但非唯一因素。即使基因型相同的生物也会表现不同表型。这个现象的机理是表观遗传学。相同的基因在不同的生物体中可能有不同的表达。</p>
+<p><strong>基因型分型 genotyping：</strong><br>使用生物学检测的方法阐明一个个体基因型的过程。亦称作”基因型检测”genotypic asasy”，常用技术包括PCR,测序,RFLP,AFLP,MLPA。</p>
+<p>回到基因型和表型的关系。<br>假定表型是基因型映射的。<br>那么如何确定表型是由什么基因型产生的？<br>提出一种方案，GWAS。</p>
+<ol>
+<li>测定多个个体基因型</li>
+<li>观测可观测性状（表型）</li>
+<li>在群体水平统计分析，根据统计量或显著性筛选出可能影响该性状的遗传标记。</li>
+</ol>
+<p><strong>连锁不平衡 linkage disequilibrium：</strong><br>是指给定种群中不同基因座loci（位点）上的等位基因allele之间的非随机nonrandom关联性。<br>当两个位点的不同等位基因的关联频率高于或低于独立随机关联的条件下的期望频率时，就称两者是连锁不平衡的。<br>连锁不平衡的程度取决于多方面的因素，包括遗传连锁、自然选择、基因重组的概率、突变率、遗传漂变、婚配制度、选型交配以及种群结构。因此，基因组中连锁不平衡的模式是构建它的群体遗传过程的一个强有力的信号。<br>两个相邻的基因A, B，它们的等位基因分别为a, b。后代群体中，实际观察到的单体型基因型AB，度量观察到的单倍型频率与平衡状态下期望频率的偏差：<br>$P(AB)&#x3D;P(A)*P(B)$，则A, B独立遗传；<br>$P(AB)≠P(A)*P(B)$，则A, B存在连锁不平衡。<br>$$ D &#x3D; P(AB)-P(A)P(B) $$</p>
+<p><a href="#jump">此处指向哈温平衡</a></p>
+<p>考虑简单的两基因座情况，设有A, B两个基因座，每个基因做各有两个等位基因，分别用1,2表示。假设每个单倍体型的频率如下所示：<br><img src="https://gwaslab.files.wordpress.com/2021/04/image-16.png" alt="Alt text"><br>各个等位基因的频率：<br><img src="https://gwaslab.files.wordpress.com/2021/04/image-17.png" alt="Alt text"><br>如果这两个基因座互相独立不相关（也就是连锁平衡 linkage equilibrium 的状态），那么各个单倍型的频率就可以直接算出，为p1q1 ,p1,q2 , p2q1, p2q2</p>
+<p>而实际情况中单倍型的频率对于不相关情况下的理论值会产生偏离（deviation），这个偏离原因即为连锁不平衡（ linkage disequilibrium ），偏离的程度通常记为 D （连锁不平衡系数，coefficient of linkage disequilibrium）</p>
+<p>$$D&#x3D;x_{11}-p_{1}q_{1}$$  </p>
+<p>下图表示了各单倍型频率，各等位基因频率与D之间的关系。</p>
+<p><img src="https://gwaslab.files.wordpress.com/2021/04/image-18.png" alt="Alt text">  </p>
+<p>但要注意的是，D值并不是一个用来衡量LD的很好的指标，因为D值会受等位基因频率影响，这使得我们无法比较不同频率的等位基因对之间连锁不平衡的大小。<br>Lewontin提出通过标准化D值来解决该问题，即用D值除以理论上D可能的最大绝对值：<br>$$D’&#x3D; \frac{D}{D_{max}}$$<br>其中：<br><img src="https://gwaslab.files.wordpress.com/2021/04/image-62.png" alt="Alt text"><br>这个就是规范化方法，对原始数据线性变换，使结果映射到[0,1]区间。  </p>
+<p>但更多的时候我们使用相关系数（correlation coefficient）r2来衡量LD：  </p>
+<p><img src="https://gwaslab.files.wordpress.com/2021/04/image-19.png" alt="Alt text">  </p>
+<p>协方差&#x2F;俩方差相乘。</p>
+<p>$$r^2&#x3D;\frac{(P_{AB}-P_AP_B)^2}{P_AP_aP_BP_b}$$</p>
+<p>这个就是简单相关系数，度量两个变量(0,1分布)之间的线性关系，其实还需要开个方。<br>复相关系数：又叫多重相关系数。复相关是指因变量与多个自变量之间的相关关系。例如，某种商品的季节性需求量与其价格水平、职工收入水平等现象之间呈现复相关关系。<br>典型相关系数：是先对原来各组变量进行主成分分析，得到新的线性关系的综合指标，再通过综合指标之间的线性相关系数来研究原各组变量间相关关系。<br>【这里可以改进GWAS噢好像】<br>统计学上：<br>r的性质：</p>
+<ol>
+<li>$|r| \geq 1$</li>
+<li>$|r|&#x3D;1$的充要条件是，存在常数a, b, 使得P{Y&#x3D;a+bX}&#x3D;1</li>
+</ol>
+<p>由性质衍生：  </p>
+<ul>
+<li>相关系数定量地刻画了 X 和 Y的相关程度，即r越大，相关程度越大；r&#x3D;0 对应相关程度最低；  </li>
+<li>X 和Y 完全相关的含义是在概率为1的意义下存在线性关系，于是r是一个可以表征X 和Y 之间线性关系紧密程度的量。当r较大时，通常说X 和Y相关程度较好；当r较小时，通常说X和Y相关程度较差；当X和Y不相关，通常认为X和Y之间不存在线性关系，<strong>但并不能排除X和Y之间可能存在其他关系</strong>。</li>
+</ul>
+<p>若X和Y独立，则必有r&#x3D;0，因而X和Y不相关；若X和Y不相关，则仅仅是不存在线性关系，可能存在其他关系，如$X^2+Y^2&#x3D;1$，X和Y不独立。<br>因此，“不相关”是一个比“独立”要弱的概念。</p>
+<p>特别地，在GWAS中<br>r2&#x3D;1有更严格的解释：两个位点的等位基因有相同的频率，并且一个位点某个等位基因的出现完全预示着另外一个位点相应等位基因的出现，这时候两个位点组成的四种可能的单倍型仅表现为两种。与D’相比，r2在连锁不平衡中更加有用，因为其具有较强的群体遗传学理论基础和一些统计学上的优势：</p>
+<p>r2的期望值和有效种群大小和重组系数相关，r2&#x3D;1&#x2F;(1+4NeC),其中Ne是有小种群大小，C是重组系数。<br>r2有很好的取样特性，样本量和r2的乘积就是所观察到的关联水平概率对应的卡方值。在检测snp和致病位点之间的关联时，如果要达到同样的统计效力，所需要的样本量要增大1&#x2F;r2倍。例如，假设snp1与疾病相关，我们要对它附近的snp2进行基因分型，他们之间的LD系数r2&#x3D;0.5，为了达到与snp1位点检测相同的统计效力，必须把样本增加2倍。<br>与D’相比，在同样长度的染色体范围内，r2往往更低，这个特性能够帮助我们找到更精度的基因定位。<br>r2和D’相比，受样本量和等位基因频率的影响较小（但影响仍然存在） </p>
+<p><a href="https://img-blog.csdn.net/20161011171330149?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">label</a></p>
+<p><strong>单体型(Haplotype,haploid genotype)</strong><br>是个体组织中，完全遗传自父母双方中一个亲本的一组等位基因，又称单倍体型或单元型。</p>
+<p><strong>等位基因频率</strong><br>等位基因频率的定义如下：  </p>
+<p>如果  </p>
+<ol>
+<li>一个染色体中存在某特定基因座，  </li>
+<li>一个种群有N个个体，每一个个体的染色体套数为n（例如二倍体生物的体细胞中有两个该特定基因座），  </li>
+<li>该等位基因在种群中有i份；</li>
+</ol>
+<p>那么等位基因频率为i&#x2F;(Nn)。</p>
+<p>举例来说，如果在某种群中一个等位基因的基因频率为20%，那么在种群的所有成员中，1&#x2F;5的染色体带有那个等位基因，而其他4&#x2F;5的染色体带有该等位基因的其他对应变种——可以是一种也可以是很多种。</p>
+<p>值得注意的是在二倍体基因中，带有该等位基因的个体最多可能有2&#x2F;5。如果等位基因随机分布的话，那么可以用二项式定理来计算：种群中32%的个体会是该等位基因的杂合体（带有一个该等位基因和另一个变种）, 4%的个体为该等位基因的纯合体（带有两个该等位基因）。所以加起来就有36%的个体带有该等位基因。然而，等位基因的随机分布是在选择不参与和其他前提下成立的。当这些前提成立时，一个种群的状态被称为哈蒂－温伯格平衡。  </p>
+<p><strong>遗传连锁 genetic linkage：</strong><br>指有性生殖中的减数分裂期在同一染色体上两个位置靠得很近的基因的DNA序列有同时被遗传的倾向。若两个遗传标记所在的基因座相互靠得很近，则在染色体互换过程中它们被分离进入不同染色单体中的可能性较小，并因此得名为遗传“连锁”。<br>一般用<strong>厘摩（cM）</strong>单位来衡量遗传连锁的程度。两个遗传标记之间的距离为1 cM表示每100个减数分裂产物中，两者在1个中分离到了不同的染色体，或者说每50次减数分裂发生1次。</p>
+<p><strong>区别连锁不平衡和遗传连锁：</strong><br>不同位点上不存在遗传连锁的等位基因之间可能存在连锁不平衡，且与等位基因频率是否处于平衡无关（不随时间变化）。此外，连锁不平衡有时被称为配子相不平衡；但是，该概念同样适用于无性生物，因此不依赖于配子的存在。</p>
+<span id="jump">
+
+<p><strong>哈迪-温伯格定律 Hardy-Weinberg principle</strong> </p>
+</span> 
+
+<p>一个族群在理想情况（不受特定的干扰因素影响，如非随机交配、天择、族群迁移、突变或群体大小有限），经过多个世代，基因频率与基因型频率会保持恒定并处于稳定的平衡状态。<br>最简单的例子是位于单一位点的两个等位基因：显性等位基因记为A而隐性等位基因记为$a$，它们的频率分别记为$p$和$q$. $P(A) &#x3D; p；P(a) &#x3D; q；p + q &#x3D; 1$。如果群体处于平衡状态，则我们可以得到  </p>
+<p>$$P_{群体中纯合子AA}(AA) &#x3D; p2$$<br>$$P_{群体中纯合子aa}(aa) &#x3D; q2$$<br>$$P_{群体中杂合子Aa}(Aa) &#x3D; 2pq$$</p>
+<p>自然界不太可能存在，哈温平衡常作遗传改变的基准。</p>
+<p><strong>LD衰减</strong><br>LD的衰减指位点间由连锁不平衡到连锁平衡的演变过程；LD衰减的速度在不同物种间或同物种的不同亚群间，往往差异非常大。所以，通常会使用1个标准——“LD衰减距离”来描述LD衰减速度的快慢。<br>LD衰减距离通常指的是：当平均LD系数r2衰减到一定大小的时候，对应的物理距离。“一定大小”是这个定义的关键点，但没有特别统一的标准，在不同文章中标准不同。常见的标准包括：  </p>
+<ul>
+<li>LD系数降低到最大值的一半；</li>
+<li>LD系数降低到0.5以下；</li>
+<li>LD系数降低到0.1以下；</li>
+<li>LD系数降低到基线水平（注意，不同物种的基线值是不同的）。</li>
+</ul>
+<p>值的获取：成对计算指定距离范围内的所有SNP的r2值，按区间取平均</p>
+<p>在经典的群体遗传学范畴内，LD 的衰减是受重组率和重组代数(the number of generations of recombination) 影响的。因此，研究 LD 的衰减可以揭示群体重组的历史。比较慢的 LD 衰减模式一般认为与群体大小降低有关（Zhao et al, 2013）。与等位基因的频率相结合，LD 衰减也可以用于检测正向选择（Sebeti et al, 2002）。  </p>
+<p>应用：</p>
+<p>判断GWAS所需标记量，决定GWAS的检测效力以及精度<br>GWAS标记量 &#x3D; 基因组大小&#x2F;LD衰减距离<br>辅助分析进化与选择<br>在同一个连锁群上，LD衰减的慢说明该群体受到选择。一般来说，野生群体比驯化改良群体LD衰减快，异花授粉植物比自花授粉植物LD衰减快。比如玉米：地方品种1kb，自交系2kb，商用自交系100kb。  </p>
+<p><strong>Haplotype Block</strong></p>
+<p>单体型块，是生物体基因组中几乎没有遗传重组历史证据的一个区域，仅包含少数单倍型。此类区域应显示出高度连锁不平衡。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/13276792-d9957979b69ba8d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1047/format/webp" alt="Alt text"></p>
+<span id="bukan">
+
+<p><strong>gwas基本原理（以SNP分子标记为例）:</strong></p>
+</span>
+
+<p>1.在一定群体中选择病例组和对照组（对于数量性状则可以是连续分布的群体），比较全基因组范围内所有SNP位点的等位基因或者基因型频率在病例组和对照组间的差异，如果某个SNP位点的等位基因或基因型在病例组中出现的频率明显高于或低于对照组，则认为该位点与疾病间存在关联性.  </p>
+<p>2.根据该位点在基因组中的位置和连锁不平衡关系推测可能的疾病易感基因. </p>
+]]></content>
+      <tags>
+        <tag>气宗</tag>
+        <tag>内功</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CV吸星大法（二）：卷积神经网络CNN</title>
     <url>/posts/51dcf902.html</url>
     <content><![CDATA[<h2 id="先去看书！先去看书！先去看书！"><a href="#先去看书！先去看书！先去看书！" class="headerlink" title="先去看书！先去看书！先去看书！"></a>先去看书！先去看书！先去看书！</h2><p><a href="https://github.com/exacity/deeplearningbook-chinese">Deeplearningbook中文版</a><br><a href="https://github.com/ionvision/DeepLearningCourseCodes">github上的相关课程</a></p>
@@ -62,41 +188,9 @@
 </ol>
 ]]></content>
       <tags>
-        <tag>内功</tag>
         <tag>气宗</tag>
+        <tag>内功</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>conda env下没有python</title>
-    <url>/posts/7e7d79c3.html</url>
-    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
-<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>深度神经网络名词解释</title>
-    <url>/posts/85c7aca4.html</url>
-    <content><![CDATA[<p><strong>反向传播</strong>（英语：Backpropagation，意为误差反向传播，缩写为BP）<br>是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。</p>
-<p><strong>张量</strong>（英语：Tensor）是一个可用来表示在一些向量、标量和其他张量之间的线性关系的多线性函数，这些线性关系的基本例子有内积、外积、线性映射以及笛卡儿积。其坐标在$n$维空间内，有$n^r$个分量的一种量，其中每个分量都是坐标的函数，而在坐标变换时，这些分量也依照某些规则作线性变换。$r$称为该张量的秩或阶（与矩阵的秩和阶均无关系）。</p>
-<p><strong>支持向量机</strong>（英语：support vector machine，常简称为SVM，又名支持向量网络）是在分类与回归分析中分析数据的监督式学习模型与相关的学习算法。给定一组训练实例，每个训练实例被标记为属于两个类别中的一个或另一个，SVM训练算法创建一个将新的实例分配给两个类别之一的模型，使其成为非概率二元线性分类器。SVM模型是将实例表示为空间中的点，这样映射就使得单独类别的实例被尽可能宽的明显的间隔分开。然后，将新的实例映射到同一空间，并基于它们落在间隔的哪一侧来预测所属类别。  </p>
-<p>除了进行线性分类之外，SVM还可以使用所谓的核技巧有效地进行非线性分类，将其输入隐式映射到高维特征空间中。</p>
-<p>当数据未被标记时，不能进行监督式学习，需要用非监督式学习，它会尝试找出数据到簇的自然聚类，并将新数据映射到这些已形成的簇。将支持向量机改进的聚类算法被称为支持向量聚类，当数据未被标记或者仅一些数据被标记时，支持向量聚类经常在工业应用中用作分类步骤的预处理。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>vscode不能正确切换conda环境</title>
-    <url>/posts/3a308af5.html</url>
-    <content><![CDATA[<p>vscode有个插件叫code runner，非常好看，比控制台直接输出好看多了。<br>控制台嘛就直接conda activate进去就好，虽然我的默认控制台是powershell进不去会报错，但是只要切换称cmd控制台就没什么问题了。<br>code runner死都切换不了，怎么处理呢，很简单，<br>在cmd中先进入目标conda环境，然后用命令启动：<code>code .</code><br>这样就能运行了。</p>
-]]></content>
-      <tags>
-        <tag>工欲善其事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小无相功：pytorch</title>
-    <url>/posts/89838bc0.html</url>
-    <content><![CDATA[<p>看官网呗还等着我写推教学吗？</p>
-]]></content>
   </entry>
   <entry>
     <title>Deploy Hexo on another computer</title>
@@ -118,12 +212,6 @@
         <tag>气宗</tag>
         <tag>工欲善其事</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>为什么向量化计算？</title>
-    <url>/posts/8b99bfe9.html</url>
-    <content><![CDATA[<p>向量化计算可以避免显式的for循环，<br>这样可以更好发挥CPU或者GPU的并行计算能力，从而极大提高计算效率。<br>所以线性代数是个好东西，本科是人都得学真是高瞻远瞩。</p>
-]]></content>
   </entry>
   <entry>
     <title>CV吸星大法（一）：卷积神经网络CNN</title>
@@ -276,8 +364,8 @@
 <h2 id="阳极-群体材料"><a href="#阳极-群体材料" class="headerlink" title="阳极-群体材料"></a>阳极-群体材料</h2><h3 id="材料种类"><a href="#材料种类" class="headerlink" title="材料种类"></a>材料种类</h3><p>F2群体，自然群体，核心种质</p>
 ]]></content>
       <tags>
-        <tag>内功</tag>
         <tag>气宗</tag>
+        <tag>内功</tag>
       </tags>
   </entry>
   <entry>
@@ -287,16 +375,6 @@
 
 <p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>条件概率</title>
-    <url>/posts/25dc542d.html</url>
-    <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
-<p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
-]]></content>
-      <tags>
-        <tag>内力</tag>
-      </tags>
   </entry>
   <entry>
     <title>Install Nodejs &amp; npm on CentOS</title>
@@ -327,91 +405,24 @@
       </tags>
   </entry>
   <entry>
-    <title>GWAS龙象般若真经：（其一）方法原理</title>
-    <url>/posts/d0974096.html</url>
-    <content><![CDATA[<p>GWAS，Genome wide association study.<br>中文名 全基因组关联分析。<br><a href="#bukan">太长不看版</a></p>
-<p><strong>遗传标记（genetic marker）：</strong><br>已知染色体位置的一种序列或基因。在生物个体间有差异因此可用于鉴别个体或物种。其可被描述为可观测的变异。</p>
-<p><strong>基因型 genotype：</strong><br>一个生物体内DNA所包含的基因。指的是一个个体所有等位基因的所有基因座上的所有组合。<br><strong>表现型&#x2F;表型 Phenotype：</strong><br>个体实际外表特征。</p>
-<p><strong>基因型和表型的关系：</strong><br>基因型对表型有很大影响，但非唯一因素。即使基因型相同的生物也会表现不同表型。这个现象的机理是表观遗传学。相同的基因在不同的生物体中可能有不同的表达。</p>
-<p><strong>基因型分型 genotyping：</strong><br>使用生物学检测的方法阐明一个个体基因型的过程。亦称作”基因型检测”genotypic asasy”，常用技术包括PCR,测序,RFLP,AFLP,MLPA。</p>
-<p>回到基因型和表型的关系。<br>假定表型是基因型映射的。<br>那么如何确定表型是由什么基因型产生的？<br>提出一种方案，GWAS。</p>
-<ol>
-<li>测定多个个体基因型</li>
-<li>观测可观测性状（表型）</li>
-<li>在群体水平统计分析，根据统计量或显著性筛选出可能影响该性状的遗传标记。</li>
-</ol>
-<p><strong>连锁不平衡 linkage disequilibrium：</strong><br>是指给定种群中不同基因座loci（位点）上的等位基因allele之间的非随机nonrandom关联性。<br>当两个位点的不同等位基因的关联频率高于或低于独立随机关联的条件下的期望频率时，就称两者是连锁不平衡的。<br>连锁不平衡的程度取决于多方面的因素，包括遗传连锁、自然选择、基因重组的概率、突变率、遗传漂变、婚配制度、选型交配以及种群结构。因此，基因组中连锁不平衡的模式是构建它的群体遗传过程的一个强有力的信号。<br>两个相邻的基因A, B，它们的等位基因分别为a, b。后代群体中，实际观察到的单体型基因型AB，度量观察到的单倍型频率与平衡状态下期望频率的偏差：<br>$P(AB)&#x3D;P(A)*P(B)$，则A, B独立遗传；<br>$P(AB)≠P(A)*P(B)$，则A, B存在连锁不平衡。<br>$$ D &#x3D; P(AB)-P(A)P(B) $$</p>
-<p><a href="#jump">此处指向哈温平衡</a></p>
-<p>考虑简单的两基因座情况，设有A, B两个基因座，每个基因做各有两个等位基因，分别用1,2表示。假设每个单倍体型的频率如下所示：<br><img src="https://gwaslab.files.wordpress.com/2021/04/image-16.png" alt="Alt text"><br>各个等位基因的频率：<br><img src="https://gwaslab.files.wordpress.com/2021/04/image-17.png" alt="Alt text"><br>如果这两个基因座互相独立不相关（也就是连锁平衡 linkage equilibrium 的状态），那么各个单倍型的频率就可以直接算出，为p1q1 ,p1,q2 , p2q1, p2q2</p>
-<p>而实际情况中单倍型的频率对于不相关情况下的理论值会产生偏离（deviation），这个偏离原因即为连锁不平衡（ linkage disequilibrium ），偏离的程度通常记为 D （连锁不平衡系数，coefficient of linkage disequilibrium）</p>
-<p>$$D&#x3D;x_{11}-p_{1}q_{1}$$  </p>
-<p>下图表示了各单倍型频率，各等位基因频率与D之间的关系。</p>
-<p><img src="https://gwaslab.files.wordpress.com/2021/04/image-18.png" alt="Alt text">  </p>
-<p>但要注意的是，D值并不是一个用来衡量LD的很好的指标，因为D值会受等位基因频率影响，这使得我们无法比较不同频率的等位基因对之间连锁不平衡的大小。<br>Lewontin提出通过标准化D值来解决该问题，即用D值除以理论上D可能的最大绝对值：<br>$$D’&#x3D; \frac{D}{D_{max}}$$<br>其中：<br><img src="https://gwaslab.files.wordpress.com/2021/04/image-62.png" alt="Alt text"><br>这个就是规范化方法，对原始数据线性变换，使结果映射到[0,1]区间。  </p>
-<p>但更多的时候我们使用相关系数（correlation coefficient）r2来衡量LD：  </p>
-<p><img src="https://gwaslab.files.wordpress.com/2021/04/image-19.png" alt="Alt text">  </p>
-<p>协方差&#x2F;俩方差相乘。</p>
-<p>$$r^2&#x3D;\frac{(P_{AB}-P_AP_B)^2}{P_AP_aP_BP_b}$$</p>
-<p>这个就是简单相关系数，度量两个变量(0,1分布)之间的线性关系，其实还需要开个方。<br>复相关系数：又叫多重相关系数。复相关是指因变量与多个自变量之间的相关关系。例如，某种商品的季节性需求量与其价格水平、职工收入水平等现象之间呈现复相关关系。<br>典型相关系数：是先对原来各组变量进行主成分分析，得到新的线性关系的综合指标，再通过综合指标之间的线性相关系数来研究原各组变量间相关关系。<br>【这里可以改进GWAS噢好像】<br>统计学上：<br>r的性质：</p>
-<ol>
-<li>$|r| \geq 1$</li>
-<li>$|r|&#x3D;1$的充要条件是，存在常数a, b, 使得P{Y&#x3D;a+bX}&#x3D;1</li>
-</ol>
-<p>由性质衍生：  </p>
-<ul>
-<li>相关系数定量地刻画了 X 和 Y的相关程度，即r越大，相关程度越大；r&#x3D;0 对应相关程度最低；  </li>
-<li>X 和Y 完全相关的含义是在概率为1的意义下存在线性关系，于是r是一个可以表征X 和Y 之间线性关系紧密程度的量。当r较大时，通常说X 和Y相关程度较好；当r较小时，通常说X和Y相关程度较差；当X和Y不相关，通常认为X和Y之间不存在线性关系，<strong>但并不能排除X和Y之间可能存在其他关系</strong>。</li>
-</ul>
-<p>若X和Y独立，则必有r&#x3D;0，因而X和Y不相关；若X和Y不相关，则仅仅是不存在线性关系，可能存在其他关系，如$X^2+Y^2&#x3D;1$，X和Y不独立。<br>因此，“不相关”是一个比“独立”要弱的概念。</p>
-<p>特别地，在GWAS中<br>r2&#x3D;1有更严格的解释：两个位点的等位基因有相同的频率，并且一个位点某个等位基因的出现完全预示着另外一个位点相应等位基因的出现，这时候两个位点组成的四种可能的单倍型仅表现为两种。与D’相比，r2在连锁不平衡中更加有用，因为其具有较强的群体遗传学理论基础和一些统计学上的优势：</p>
-<p>r2的期望值和有效种群大小和重组系数相关，r2&#x3D;1&#x2F;(1+4NeC),其中Ne是有小种群大小，C是重组系数。<br>r2有很好的取样特性，样本量和r2的乘积就是所观察到的关联水平概率对应的卡方值。在检测snp和致病位点之间的关联时，如果要达到同样的统计效力，所需要的样本量要增大1&#x2F;r2倍。例如，假设snp1与疾病相关，我们要对它附近的snp2进行基因分型，他们之间的LD系数r2&#x3D;0.5，为了达到与snp1位点检测相同的统计效力，必须把样本增加2倍。<br>与D’相比，在同样长度的染色体范围内，r2往往更低，这个特性能够帮助我们找到更精度的基因定位。<br>r2和D’相比，受样本量和等位基因频率的影响较小（但影响仍然存在） </p>
-<p><a href="https://img-blog.csdn.net/20161011171330149?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">label</a></p>
-<p><strong>单体型(Haplotype,haploid genotype)</strong><br>是个体组织中，完全遗传自父母双方中一个亲本的一组等位基因，又称单倍体型或单元型。</p>
-<p><strong>等位基因频率</strong><br>等位基因频率的定义如下：  </p>
-<p>如果  </p>
-<ol>
-<li>一个染色体中存在某特定基因座，  </li>
-<li>一个种群有N个个体，每一个个体的染色体套数为n（例如二倍体生物的体细胞中有两个该特定基因座），  </li>
-<li>该等位基因在种群中有i份；</li>
-</ol>
-<p>那么等位基因频率为i&#x2F;(Nn)。</p>
-<p>举例来说，如果在某种群中一个等位基因的基因频率为20%，那么在种群的所有成员中，1&#x2F;5的染色体带有那个等位基因，而其他4&#x2F;5的染色体带有该等位基因的其他对应变种——可以是一种也可以是很多种。</p>
-<p>值得注意的是在二倍体基因中，带有该等位基因的个体最多可能有2&#x2F;5。如果等位基因随机分布的话，那么可以用二项式定理来计算：种群中32%的个体会是该等位基因的杂合体（带有一个该等位基因和另一个变种）, 4%的个体为该等位基因的纯合体（带有两个该等位基因）。所以加起来就有36%的个体带有该等位基因。然而，等位基因的随机分布是在选择不参与和其他前提下成立的。当这些前提成立时，一个种群的状态被称为哈蒂－温伯格平衡。  </p>
-<p><strong>遗传连锁 genetic linkage：</strong><br>指有性生殖中的减数分裂期在同一染色体上两个位置靠得很近的基因的DNA序列有同时被遗传的倾向。若两个遗传标记所在的基因座相互靠得很近，则在染色体互换过程中它们被分离进入不同染色单体中的可能性较小，并因此得名为遗传“连锁”。<br>一般用<strong>厘摩（cM）</strong>单位来衡量遗传连锁的程度。两个遗传标记之间的距离为1 cM表示每100个减数分裂产物中，两者在1个中分离到了不同的染色体，或者说每50次减数分裂发生1次。</p>
-<p><strong>区别连锁不平衡和遗传连锁：</strong><br>不同位点上不存在遗传连锁的等位基因之间可能存在连锁不平衡，且与等位基因频率是否处于平衡无关（不随时间变化）。此外，连锁不平衡有时被称为配子相不平衡；但是，该概念同样适用于无性生物，因此不依赖于配子的存在。</p>
-<span id="jump">
-
-<p><strong>哈迪-温伯格定律 Hardy-Weinberg principle</strong> </p>
-</span> 
-
-<p>一个族群在理想情况（不受特定的干扰因素影响，如非随机交配、天择、族群迁移、突变或群体大小有限），经过多个世代，基因频率与基因型频率会保持恒定并处于稳定的平衡状态。<br>最简单的例子是位于单一位点的两个等位基因：显性等位基因记为A而隐性等位基因记为$a$，它们的频率分别记为$p$和$q$. $P(A) &#x3D; p；P(a) &#x3D; q；p + q &#x3D; 1$。如果群体处于平衡状态，则我们可以得到  </p>
-<p>$$P_{群体中纯合子AA}(AA) &#x3D; p2$$<br>$$P_{群体中纯合子aa}(aa) &#x3D; q2$$<br>$$P_{群体中杂合子Aa}(Aa) &#x3D; 2pq$$</p>
-<p>自然界不太可能存在，哈温平衡常作遗传改变的基准。</p>
-<p><strong>LD衰减</strong><br>LD的衰减指位点间由连锁不平衡到连锁平衡的演变过程；LD衰减的速度在不同物种间或同物种的不同亚群间，往往差异非常大。所以，通常会使用1个标准——“LD衰减距离”来描述LD衰减速度的快慢。<br>LD衰减距离通常指的是：当平均LD系数r2衰减到一定大小的时候，对应的物理距离。“一定大小”是这个定义的关键点，但没有特别统一的标准，在不同文章中标准不同。常见的标准包括：  </p>
-<ul>
-<li>LD系数降低到最大值的一半；</li>
-<li>LD系数降低到0.5以下；</li>
-<li>LD系数降低到0.1以下；</li>
-<li>LD系数降低到基线水平（注意，不同物种的基线值是不同的）。</li>
-</ul>
-<p>值的获取：成对计算指定距离范围内的所有SNP的r2值，按区间取平均</p>
-<p>在经典的群体遗传学范畴内，LD 的衰减是受重组率和重组代数(the number of generations of recombination) 影响的。因此，研究 LD 的衰减可以揭示群体重组的历史。比较慢的 LD 衰减模式一般认为与群体大小降低有关（Zhao et al, 2013）。与等位基因的频率相结合，LD 衰减也可以用于检测正向选择（Sebeti et al, 2002）。  </p>
-<p>应用：</p>
-<p>判断GWAS所需标记量，决定GWAS的检测效力以及精度<br>GWAS标记量 &#x3D; 基因组大小&#x2F;LD衰减距离<br>辅助分析进化与选择<br>在同一个连锁群上，LD衰减的慢说明该群体受到选择。一般来说，野生群体比驯化改良群体LD衰减快，异花授粉植物比自花授粉植物LD衰减快。比如玉米：地方品种1kb，自交系2kb，商用自交系100kb。  </p>
-<p><strong>Haplotype Block</strong></p>
-<p>单体型块，是生物体基因组中几乎没有遗传重组历史证据的一个区域，仅包含少数单倍型。此类区域应显示出高度连锁不平衡。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/13276792-d9957979b69ba8d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1047/format/webp" alt="Alt text"></p>
-<span id="bukan">
-
-<p><strong>gwas基本原理（以SNP分子标记为例）:</strong></p>
-</span>
-
-<p>1.在一定群体中选择病例组和对照组（对于数量性状则可以是连续分布的群体），比较全基因组范围内所有SNP位点的等位基因或者基因型频率在病例组和对照组间的差异，如果某个SNP位点的等位基因或基因型在病例组中出现的频率明显高于或低于对照组，则认为该位点与疾病间存在关联性.  </p>
-<p>2.根据该位点在基因组中的位置和连锁不平衡关系推测可能的疾病易感基因. </p>
+    <title>条件概率</title>
+    <url>/posts/25dc542d.html</url>
+    <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
+<p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
 ]]></content>
       <tags>
-        <tag>内功</tag>
-        <tag>气宗</tag>
+        <tag>内力</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>概率的性质</title>
+    <url>/posts/506cea2e.html</url>
+    <content><![CDATA[<ol>
+<li>可加性、2. 连续性、3. 单调性<br><strong>加法公式</strong><br>对任意两个事件A、B，有：<br>$$P(A \cup B) &#x3D; P(A) + P(A) -P(AB)$$<br>一般地，对于任意n个事件$A_1,A_2,\dots,A_n,$有：<br>$$P\left( \bigcup^n_{i&#x3D;1}A_i\right) &#x3D; \sum_{i&#x3D;1}^nP(A_i)-\sum_{1\leq i &lt; j \le n }P(A_iA_j) + \sum_{1\leq i &lt; j  &lt; k \le n }P(A_iA_jA_k) + \dots + (-1)^{n-1}P(A_1A_2\dots A_n)$$<br>半可加性：<br>对任意两个事件，有：<br>$$P(A \cup B) \leq P(A) + P(B)$$</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>内力</tag>
       </tags>
   </entry>
   <entry>
@@ -425,17 +436,6 @@
 ]]></content>
       <tags>
         <tag>气宗</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>概率的性质</title>
-    <url>/posts/506cea2e.html</url>
-    <content><![CDATA[<ol>
-<li>可加性、2. 连续性、3. 单调性<br><strong>加法公式</strong><br>对任意两个事件A、B，有：<br>$$P(A \cup B) &#x3D; P(A) + P(A) -P(AB)$$<br>一般地，对于任意n个事件$A_1,A_2,\dots,A_n,$有：<br>$$P\left( \bigcup^n_{i&#x3D;1}A_i\right) &#x3D; \sum_{i&#x3D;1}^nP(A_i)-\sum_{1\leq i &lt; j \le n }P(A_iA_j) + \sum_{1\leq i &lt; j  &lt; k \le n }P(A_iA_jA_k) + \dots + (-1)^{n-1}P(A_1A_2\dots A_n)$$<br>半可加性：<br>对任意两个事件，有：<br>$$P(A \cup B) \leq P(A) + P(B)$$</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>内力</tag>
       </tags>
   </entry>
   <entry>
