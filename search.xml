@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>conda env下没有python</title>
+    <url>/posts/7e7d79c3.html</url>
+    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
+<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
+]]></content>
+  </entry>
+  <entry>
     <title>CV吸星大法（二）：卷积神经网络CNN</title>
     <url>/posts/51dcf902.html</url>
     <content><![CDATA[<h2 id="先去看书！先去看书！先去看书！"><a href="#先去看书！先去看书！先去看书！" class="headerlink" title="先去看书！先去看书！先去看书！"></a>先去看书！先去看书！先去看书！</h2><p><a href="https://github.com/exacity/deeplearningbook-chinese">Deeplearningbook中文版</a><br><a href="https://github.com/ionvision/DeepLearningCourseCodes">github上的相关课程</a></p>
@@ -67,13 +74,6 @@
       </tags>
   </entry>
   <entry>
-    <title>conda env下没有python</title>
-    <url>/posts/7e7d79c3.html</url>
-    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
-<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
-]]></content>
-  </entry>
-  <entry>
     <title>深度神经网络名词解释</title>
     <url>/posts/85c7aca4.html</url>
     <content><![CDATA[<p><strong>反向传播</strong>（英语：Backpropagation，意为误差反向传播，缩写为BP）<br>是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。</p>
@@ -90,38 +90,17 @@
 ]]></content>
   </entry>
   <entry>
-    <title>vscode不能正确切换conda环境</title>
-    <url>/posts/3a308af5.html</url>
-    <content><![CDATA[<p>vscode有个插件叫code runner，非常好看，比控制台直接输出好看多了。<br>控制台嘛就直接conda activate进去就好，虽然我的默认控制台是powershell进不去会报错，但是只要切换称cmd控制台就没什么问题了。<br>code runner死都切换不了，怎么处理呢，很简单，<br>在cmd中先进入目标conda环境，然后用命令启动：<code>code .</code><br>这样就能运行了。</p>
-]]></content>
-      <tags>
-        <tag>工欲善其事</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>小无相功：pytorch</title>
     <url>/posts/89838bc0.html</url>
     <content><![CDATA[<p>看官网呗还等着我写推教学吗？</p>
 ]]></content>
   </entry>
   <entry>
-    <title>Deploy Hexo on another computer</title>
-    <url>/posts/2567506c.html</url>
-    <content><![CDATA[<p>在另一台电脑上部署一下Hexo。<br>利用git分支来同步hexo。<br>main branch放静态页面文件<br>hexo branch放源码</p>
-<ol>
-<li>设置hexo branch为default branch</li>
-<li>在老电脑上push源文件到hexo branch</li>
-<li>在新电脑上clone hexo branch到本地</li>
-<li>在新电脑上安装hexo环境</li>
-<li>在新电脑上推送源码到hexo branch，生成的静态页面仍推送到main branch，就是这么神奇</li>
-<li>使用git add . &amp;&amp; git commit -m “message” &amp;&amp; git push 更新源文件</li>
-<li>使用hexo clean &amp;&amp; hexo g &amp;&amp; hexo d推送静态到main</li>
-<li>然后报了个错，看了一下主题文件夹是空的，copy一下主题过来，hexo d，完成</li>
-<li>每次使用前pull一下以保证同步</li>
-</ol>
+    <title>vscode不能正确切换conda环境</title>
+    <url>/posts/3a308af5.html</url>
+    <content><![CDATA[<p>vscode有个插件叫code runner，非常好看，比控制台直接输出好看多了。<br>控制台嘛就直接conda activate进去就好，虽然我的默认控制台是powershell进不去会报错，但是只要切换称cmd控制台就没什么问题了。<br>code runner死都切换不了，怎么处理呢，很简单，<br>在cmd中先进入目标conda环境，然后用命令启动：<code>code .</code><br>这样就能运行了。</p>
 ]]></content>
       <tags>
-        <tag>气宗</tag>
         <tag>工欲善其事</tag>
       </tags>
   </entry>
@@ -219,6 +198,92 @@
 ]]></content>
   </entry>
   <entry>
+    <title>GWAS龙象般若真经：（其二）流程原理</title>
+    <url>/posts/c698f62e.html</url>
+    <content><![CDATA[<h2 id="阴极-遗传标记"><a href="#阴极-遗传标记" class="headerlink" title="阴极-遗传标记"></a>阴极-遗传标记</h2><p>遗传标记从何而来？</p>
+<ul>
+<li><p>重测序：<br>就是有参考基因组的物种，把群体所有个体都测一遍基因组。</p>
+</li>
+<li><p>转录组：<br>测转录组，可以无参，仅包含基因编码区</p>
+</li>
+<li><p>简化基因组（RRGS）：<br>限制性内切酶切基因组DNA，并对酶切片段高通量测序</p>
+</li>
+</ul>
+<p><img src="http://www.lc-bio.com/upload/201805/17/201805171448243883.jpg" alt="Alt text"></p>
+<ul>
+<li>基因芯片</li>
+<li>传统分子标记</li>
+</ul>
+<h3 id="质量控制（QC）"><a href="#质量控制（QC）" class="headerlink" title="质量控制（QC）"></a>质量控制（QC）</h3><p>说得非常高级，其实就是粗暴地删掉一些。<br>比如snp不够多的物种，比如只有少数物种有的snp都要删掉。还有一个动植物常用的MAF过滤，是指的次等位基因频率过滤，次等位是指基因频率比较低的那个等位。就是说有些等位基因在群体中非常罕见，因此就算分析了也没有什么很强的效应，有些甚至就没有差别，分析浪费算力，所以删掉它。</p>
+<p>一般plink文件用plink一行解决，不是plink文件那转成plink文件一样一行可以解决。（笑</p>
+<p>当然别的文件也是有办法的，我还没做过，暂时不想做。</p>
+<p>计算样品杂合度–het<br>F值越小，杂合度越高，F值越大，纯合度越高。<br>计算snp位点杂合度 –hardy<br>Geno，2&#x2F;0&#x2F;6，第一个是次等位基因纯合个数，第二个是杂合个数，第三个是主等位基因纯合个数<br>O(HET),是杂合所在的比值</p>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>As summary statistic</th>
+<th>As inclusion criteria</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>个体基因分型缺失率</td>
+<td>–missing</td>
+<td>–mind N</td>
+</tr>
+<tr>
+<td>SNP基因分型缺失率</td>
+<td>–missing</td>
+<td>–geno N</td>
+</tr>
+<tr>
+<td>等位基因频率</td>
+<td>–freq</td>
+<td>–maf N</td>
+</tr>
+<tr>
+<td>哈迪-温伯格平衡</td>
+<td>–hardy</td>
+<td>–hwe N</td>
+</tr>
+<tr>
+<td>孟德尔误差率</td>
+<td>–mendel</td>
+<td>–me N M</td>
+</tr>
+</tbody></table>
+<h2 id="阳极-群体材料"><a href="#阳极-群体材料" class="headerlink" title="阳极-群体材料"></a>阳极-群体材料</h2><h3 id="材料种类"><a href="#材料种类" class="headerlink" title="材料种类"></a>材料种类</h3><p>F2群体，自然群体，核心种质</p>
+]]></content>
+      <categories>
+        <category>GWAS</category>
+      </categories>
+      <tags>
+        <tag>气宗</tag>
+        <tag>内功</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Deploy Hexo on another computer</title>
+    <url>/posts/2567506c.html</url>
+    <content><![CDATA[<p>在另一台电脑上部署一下Hexo。<br>利用git分支来同步hexo。<br>main branch放静态页面文件<br>hexo branch放源码</p>
+<ol>
+<li>设置hexo branch为default branch</li>
+<li>在老电脑上push源文件到hexo branch</li>
+<li>在新电脑上clone hexo branch到本地</li>
+<li>在新电脑上安装hexo环境</li>
+<li>在新电脑上推送源码到hexo branch，生成的静态页面仍推送到main branch，就是这么神奇</li>
+<li>使用git add . &amp;&amp; git commit -m “message” &amp;&amp; git push 更新源文件</li>
+<li>使用hexo clean &amp;&amp; hexo g &amp;&amp; hexo d推送静态到main</li>
+<li>然后报了个错，看了一下主题文件夹是空的，copy一下主题过来，hexo d，完成</li>
+<li>每次使用前pull一下以保证同步</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>气宗</tag>
+        <tag>工欲善其事</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GWAS龙象般若真经：（其一）方法原理</title>
     <url>/posts/d0974096.html</url>
     <content><![CDATA[<p>GWAS，Genome wide association study.<br>中文名 全基因组关联分析。<br><a href="#bukan">太长不看版</a></p>
@@ -310,71 +375,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GWAS龙象般若真经：（其二）流程原理</title>
-    <url>/posts/c698f62e.html</url>
-    <content><![CDATA[<h2 id="阴极-遗传标记"><a href="#阴极-遗传标记" class="headerlink" title="阴极-遗传标记"></a>阴极-遗传标记</h2><p>遗传标记从何而来？</p>
-<ul>
-<li><p>重测序：<br>就是有参考基因组的物种，把群体所有个体都测一遍基因组。</p>
-</li>
-<li><p>转录组：<br>测转录组，可以无参，仅包含基因编码区</p>
-</li>
-<li><p>简化基因组（RRGS）：<br>限制性内切酶切基因组DNA，并对酶切片段高通量测序</p>
-</li>
-</ul>
-<p><img src="http://www.lc-bio.com/upload/201805/17/201805171448243883.jpg" alt="Alt text"></p>
-<ul>
-<li>基因芯片</li>
-<li>传统分子标记</li>
-</ul>
-<h3 id="质量控制（QC）"><a href="#质量控制（QC）" class="headerlink" title="质量控制（QC）"></a>质量控制（QC）</h3><p>说得非常高级，其实就是粗暴地删掉一些。<br>比如snp不够多的物种，比如只有少数物种有的snp都要删掉。还有一个动植物常用的MAF过滤，是指的次等位基因频率过滤，次等位是指基因频率比较低的那个等位。就是说有些等位基因在群体中非常罕见，因此就算分析了也没有什么很强的效应，有些甚至就没有差别，分析浪费算力，所以删掉它。</p>
-<p>一般plink文件用plink一行解决，不是plink文件那转成plink文件一样一行可以解决。（笑</p>
-<p>当然别的文件也是有办法的，我还没做过，暂时不想做。</p>
-<p>计算样品杂合度–het<br>F值越小，杂合度越高，F值越大，纯合度越高。<br>计算snp位点杂合度 –hardy<br>Geno，2&#x2F;0&#x2F;6，第一个是次等位基因纯合个数，第二个是杂合个数，第三个是主等位基因纯合个数<br>O(HET),是杂合所在的比值</p>
-<table>
-<thead>
-<tr>
-<th>功能</th>
-<th>As summary statistic</th>
-<th>As inclusion criteria</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>个体基因分型缺失率</td>
-<td>–missing</td>
-<td>–mind N</td>
-</tr>
-<tr>
-<td>SNP基因分型缺失率</td>
-<td>–missing</td>
-<td>–geno N</td>
-</tr>
-<tr>
-<td>等位基因频率</td>
-<td>–freq</td>
-<td>–maf N</td>
-</tr>
-<tr>
-<td>哈迪-温伯格平衡</td>
-<td>–hardy</td>
-<td>–hwe N</td>
-</tr>
-<tr>
-<td>孟德尔误差率</td>
-<td>–mendel</td>
-<td>–me N M</td>
-</tr>
-</tbody></table>
-<h2 id="阳极-群体材料"><a href="#阳极-群体材料" class="headerlink" title="阳极-群体材料"></a>阳极-群体材料</h2><h3 id="材料种类"><a href="#材料种类" class="headerlink" title="材料种类"></a>材料种类</h3><p>F2群体，自然群体，核心种质</p>
-]]></content>
-      <categories>
-        <category>GWAS</category>
-      </categories>
-      <tags>
-        <tag>气宗</tag>
-        <tag>内功</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Install Nodejs &amp; npm on CentOS</title>
     <url>/posts/1b1c601.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -421,17 +421,6 @@
       </tags>
   </entry>
   <entry>
-    <title>概率的性质</title>
-    <url>/posts/506cea2e.html</url>
-    <content><![CDATA[<ol>
-<li>可加性、2. 连续性、3. 单调性<br><strong>加法公式</strong><br>对任意两个事件A、B，有：<br>$$P(A \cup B) &#x3D; P(A) + P(A) -P(AB)$$<br>一般地，对于任意n个事件$A_1,A_2,\dots,A_n,$有：<br>$$P\left( \bigcup^n_{i&#x3D;1}A_i\right) &#x3D; \sum_{i&#x3D;1}^nP(A_i)-\sum_{1\leq i &lt; j \le n }P(A_iA_j) + \sum_{1\leq i &lt; j  &lt; k \le n }P(A_iA_jA_k) + \dots + (-1)^{n-1}P(A_1A_2\dots A_n)$$<br>半可加性：<br>对任意两个事件，有：<br>$$P(A \cup B) \leq P(A) + P(B)$$</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>内力</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>= =|||死都不输出的awk</title>
     <url>/posts/12b473ed.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -442,6 +431,17 @@
 ]]></content>
       <tags>
         <tag>气宗</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>概率的性质</title>
+    <url>/posts/506cea2e.html</url>
+    <content><![CDATA[<ol>
+<li>可加性、2. 连续性、3. 单调性<br><strong>加法公式</strong><br>对任意两个事件A、B，有：<br>$$P(A \cup B) &#x3D; P(A) + P(A) -P(AB)$$<br>一般地，对于任意n个事件$A_1,A_2,\dots,A_n,$有：<br>$$P\left( \bigcup^n_{i&#x3D;1}A_i\right) &#x3D; \sum_{i&#x3D;1}^nP(A_i)-\sum_{1\leq i &lt; j \le n }P(A_iA_j) + \sum_{1\leq i &lt; j  &lt; k \le n }P(A_iA_jA_k) + \dots + (-1)^{n-1}P(A_1A_2\dots A_n)$$<br>半可加性：<br>对任意两个事件，有：<br>$$P(A \cup B) \leq P(A) + P(B)$$</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>内力</tag>
       </tags>
   </entry>
   <entry>
