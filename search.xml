@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>conda env下没有python</title>
-    <url>/posts/7e7d79c3.html</url>
-    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
-<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
-]]></content>
-  </entry>
-  <entry>
     <title>深度神经网络名词解释</title>
     <url>/posts/85c7aca4.html</url>
     <content><![CDATA[<p><strong>反向传播</strong>（英语：Backpropagation，意为误差反向传播，缩写为BP）<br>是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。</p>
@@ -15,6 +8,13 @@
 <p><strong>支持向量机</strong>（英语：support vector machine，常简称为SVM，又名支持向量网络）是在分类与回归分析中分析数据的监督式学习模型与相关的学习算法。给定一组训练实例，每个训练实例被标记为属于两个类别中的一个或另一个，SVM训练算法创建一个将新的实例分配给两个类别之一的模型，使其成为非概率二元线性分类器。SVM模型是将实例表示为空间中的点，这样映射就使得单独类别的实例被尽可能宽的明显的间隔分开。然后，将新的实例映射到同一空间，并基于它们落在间隔的哪一侧来预测所属类别。  </p>
 <p>除了进行线性分类之外，SVM还可以使用所谓的核技巧有效地进行非线性分类，将其输入隐式映射到高维特征空间中。</p>
 <p>当数据未被标记时，不能进行监督式学习，需要用非监督式学习，它会尝试找出数据到簇的自然聚类，并将新数据映射到这些已形成的簇。将支持向量机改进的聚类算法被称为支持向量聚类，当数据未被标记或者仅一些数据被标记时，支持向量聚类经常在工业应用中用作分类步骤的预处理。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>conda env下没有python</title>
+    <url>/posts/7e7d79c3.html</url>
+    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
+<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
 ]]></content>
   </entry>
   <entry>
@@ -96,11 +96,60 @@
       </tags>
   </entry>
   <entry>
+    <title>Deploy Hexo on another computer</title>
+    <url>/posts/2567506c.html</url>
+    <content><![CDATA[<p>在另一台电脑上部署一下Hexo。<br>利用git分支来同步hexo。<br>main branch放静态页面文件<br>hexo branch放源码</p>
+<ol>
+<li>设置hexo branch为default branch</li>
+<li>在老电脑上push源文件到hexo branch</li>
+<li>在新电脑上clone hexo branch到本地</li>
+<li>在新电脑上安装hexo环境</li>
+<li>在新电脑上推送源码到hexo branch，生成的静态页面仍推送到main branch，就是这么神奇</li>
+<li>使用git add . &amp;&amp; git commit -m “message” &amp;&amp; git push 更新源文件</li>
+<li>使用hexo clean &amp;&amp; hexo g &amp;&amp; hexo d推送静态到main</li>
+<li>然后报了个错，看了一下主题文件夹是空的，copy一下主题过来，hexo d，完成</li>
+<li>每次使用前pull一下以保证同步</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>气宗</tag>
+        <tag>工欲善其事</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>vscode不能正确切换conda环境</title>
     <url>/posts/3a308af5.html</url>
     <content><![CDATA[<p>vscode有个插件叫code runner，非常好看，比控制台直接输出好看多了。<br>控制台嘛就直接conda activate进去就好，虽然我的默认控制台是powershell进不去会报错，但是只要切换称cmd控制台就没什么问题了。<br>code runner死都切换不了，怎么处理呢，很简单，<br>在cmd中先进入目标conda环境，然后用命令启动：<code>code .</code><br>这样就能运行了。</p>
 ]]></content>
       <tags>
+        <tag>工欲善其事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Install Nodejs &amp; npm on CentOS</title>
+    <url>/posts/1b1c601.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>要用jupyter插件离不开JavaScript。<br>那要用JS就得装Node.js和npm。<br>那装吧。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://npmmirror.com/mirrors/node/v18.16.0/node-v18.16.0-linux-x64.tar.xz</span><br><span class="line">tar -xvf node-v18.16.0-linux-x64.tar.gz</span><br></pre></td></tr></table></figure>
+<p>装在<code>root/Downloads/</code>目录下面。<br>然后cd到<code>usr/bin/</code>下，加个软链。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo ln -s /root/Downloads/node-v18.16.0-linux-x64/bin/node node</span><br></pre></td></tr></table></figure>
+<p>然后我们来node一下，哦豁，报错了。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[root@primary bin]# ./npm</span><br><span class="line">node: /lib64/libm.so.6: version `GLIBC_2.27&#x27; not found (required by node)</span><br></pre></td></tr></table></figure>
+<p>得，GLIBC版本低，更新。参考<a href="https://www.cnblogs.com/dingshaohua/p/17103654.html">https://www.cnblogs.com/dingshaohua/p/17103654.html</a><br>丁少华dalao的解决方案</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget http://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.gz</span><br><span class="line">tar xf glibc-2.28.tar.gz </span><br><span class="line">cd glibc-2.28/ &amp;&amp; mkdir build  &amp;&amp; cd build</span><br><span class="line">../configure --prefix=/usr --disable-profile --enable-add-ons --with-headers=/usr/include --with-binutils=/usr/bin</span><br></pre></td></tr></table></figure>
+<p>报错，更新make和gcc</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 升级GCC(默认为4 升级为8)</span><br><span class="line">yum install -y centos-release-scl</span><br><span class="line">yum install -y devtoolset-8-gcc*</span><br><span class="line">mv /usr/bin/gcc /usr/bin/gcc-4.8.5</span><br><span class="line">ln -s /opt/rh/devtoolset-8/root/bin/gcc /usr/bin/gcc</span><br><span class="line">mv /usr/bin/g++ /usr/bin/g++-4.8.5</span><br><span class="line">ln -s /opt/rh/devtoolset-8/root/bin/g++ /usr/bin/g++</span><br><span class="line"></span><br><span class="line"># 升级 make(默认为3 升级为4)</span><br><span class="line">wget http://ftp.gnu.org/gnu/make/make-4.3.tar.gz</span><br><span class="line">tar -xzvf make-4.3.tar.gz &amp;&amp; cd make-4.3/</span><br><span class="line">./configure  --prefix=/usr/local/make</span><br><span class="line">make &amp;&amp; make install</span><br><span class="line">cd /usr/bin/ &amp;&amp; mv make make.bak</span><br><span class="line">ln -sv /usr/local/make/bin/make /usr/bin/make</span><br></pre></td></tr></table></figure>
+<p>好，继续报错。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LD_LIBRARY_PATH shouldn&#x27;t contain the current directory</span><br></pre></td></tr></table></figure>
+<p>问题不大，我们把这个变量删了。<br>先看一眼变量长啥样，copy下来以便恢复。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">echo $LD_LIBRARY_PATH # copy this path</span><br><span class="line">LD_LIBRARY_PATH=</span><br></pre></td></tr></table></figure>
+<p>然后回过头去编译glibc。编译通过，<code>make &amp;&amp; make install</code>安装 重新添加LD_LIBRARY_PATH。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vim /etc/profile</span><br><span class="line">export LD_LIBRARY_PATH=$LD_LIBRARY_PATH[刚复制的路径]</span><br><span class="line"></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+<p>有个要点，千万不要加空格。不然一会儿就<code>ls</code>都用不了了，系统会崩。会 段错误(吐核)。</p>
+<p><strong>PS: 简单起见，<code>conda install nodejs</code>解决一切问题。（笑</strong></p>
+]]></content>
+      <tags>
+        <tag>气宗</tag>
         <tag>工欲善其事</tag>
       </tags>
   </entry>
@@ -198,6 +247,14 @@
 ]]></content>
   </entry>
   <entry>
+    <title>A personal site basing on github</title>
+    <url>/posts/a59c950b.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>GWAS龙象般若真经：（其一）方法原理</title>
     <url>/posts/d0974096.html</url>
     <content><![CDATA[<p>GWAS，Genome wide association study.<br>中文名 全基因组关联分析。<br><a href="#bukan">太长不看版</a></p>
@@ -289,6 +346,40 @@
       </tags>
   </entry>
   <entry>
+    <title>概率的性质</title>
+    <url>/posts/506cea2e.html</url>
+    <content><![CDATA[<ol>
+<li>可加性、2. 连续性、3. 单调性<br><strong>加法公式</strong><br>对任意两个事件A、B，有：<br>$$P(A \cup B) &#x3D; P(A) + P(A) -P(AB)$$<br>一般地，对于任意n个事件$A_1,A_2,\dots,A_n,$有：<br>$$P\left( \bigcup^n_{i&#x3D;1}A_i\right) &#x3D; \sum_{i&#x3D;1}^nP(A_i)-\sum_{1\leq i &lt; j \le n }P(A_iA_j) + \sum_{1\leq i &lt; j  &lt; k \le n }P(A_iA_jA_k) + \dots + (-1)^{n-1}P(A_1A_2\dots A_n)$$<br>半可加性：<br>对任意两个事件，有：<br>$$P(A \cup B) \leq P(A) + P(B)$$</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>内力</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>条件概率</title>
+    <url>/posts/25dc542d.html</url>
+    <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
+<p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
+]]></content>
+      <tags>
+        <tag>内力</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>= =|||死都不输出的awk</title>
+    <url>/posts/12b473ed.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<p>在用JupyterLab做查字典的时候，发现死都不输出，给ChatGPT验代码能通过，跑demo能通过。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">awk &#x27;NR==FNR&#123;a[$3]=$0;next&#125; NR&gt;FNR&#123;if($1 in a) print a[$1]&#125;&#x27; file1 file2 &gt; file3</span><br></pre></td></tr></table></figure>
+<p>但就是死都不输出，挨个换输入文件发现问题出在字典里。<br>字典是直接从电脑通过JupyterLab拷贝过去的。可能出了和^M那个一样的莫名奇妙的问题。所以手动复制一个副本，愉快跑通。</p>
+]]></content>
+      <tags>
+        <tag>气宗</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GWAS龙象般若真经：（其二）流程原理</title>
     <url>/posts/c698f62e.html</url>
     <content><![CDATA[<h2 id="阴极-遗传标记"><a href="#阴极-遗传标记" class="headerlink" title="阴极-遗传标记"></a>阴极-遗传标记</h2><p>遗传标记从何而来？</p>
@@ -351,97 +442,6 @@
       <tags>
         <tag>气宗</tag>
         <tag>内功</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Install Nodejs &amp; npm on CentOS</title>
-    <url>/posts/1b1c601.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>要用jupyter插件离不开JavaScript。<br>那要用JS就得装Node.js和npm。<br>那装吧。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://npmmirror.com/mirrors/node/v18.16.0/node-v18.16.0-linux-x64.tar.xz</span><br><span class="line">tar -xvf node-v18.16.0-linux-x64.tar.gz</span><br></pre></td></tr></table></figure>
-<p>装在<code>root/Downloads/</code>目录下面。<br>然后cd到<code>usr/bin/</code>下，加个软链。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo ln -s /root/Downloads/node-v18.16.0-linux-x64/bin/node node</span><br></pre></td></tr></table></figure>
-<p>然后我们来node一下，哦豁，报错了。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[root@primary bin]# ./npm</span><br><span class="line">node: /lib64/libm.so.6: version `GLIBC_2.27&#x27; not found (required by node)</span><br></pre></td></tr></table></figure>
-<p>得，GLIBC版本低，更新。参考<a href="https://www.cnblogs.com/dingshaohua/p/17103654.html">https://www.cnblogs.com/dingshaohua/p/17103654.html</a><br>丁少华dalao的解决方案</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget http://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.gz</span><br><span class="line">tar xf glibc-2.28.tar.gz </span><br><span class="line">cd glibc-2.28/ &amp;&amp; mkdir build  &amp;&amp; cd build</span><br><span class="line">../configure --prefix=/usr --disable-profile --enable-add-ons --with-headers=/usr/include --with-binutils=/usr/bin</span><br></pre></td></tr></table></figure>
-<p>报错，更新make和gcc</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 升级GCC(默认为4 升级为8)</span><br><span class="line">yum install -y centos-release-scl</span><br><span class="line">yum install -y devtoolset-8-gcc*</span><br><span class="line">mv /usr/bin/gcc /usr/bin/gcc-4.8.5</span><br><span class="line">ln -s /opt/rh/devtoolset-8/root/bin/gcc /usr/bin/gcc</span><br><span class="line">mv /usr/bin/g++ /usr/bin/g++-4.8.5</span><br><span class="line">ln -s /opt/rh/devtoolset-8/root/bin/g++ /usr/bin/g++</span><br><span class="line"></span><br><span class="line"># 升级 make(默认为3 升级为4)</span><br><span class="line">wget http://ftp.gnu.org/gnu/make/make-4.3.tar.gz</span><br><span class="line">tar -xzvf make-4.3.tar.gz &amp;&amp; cd make-4.3/</span><br><span class="line">./configure  --prefix=/usr/local/make</span><br><span class="line">make &amp;&amp; make install</span><br><span class="line">cd /usr/bin/ &amp;&amp; mv make make.bak</span><br><span class="line">ln -sv /usr/local/make/bin/make /usr/bin/make</span><br></pre></td></tr></table></figure>
-<p>好，继续报错。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LD_LIBRARY_PATH shouldn&#x27;t contain the current directory</span><br></pre></td></tr></table></figure>
-<p>问题不大，我们把这个变量删了。<br>先看一眼变量长啥样，copy下来以便恢复。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">echo $LD_LIBRARY_PATH # copy this path</span><br><span class="line">LD_LIBRARY_PATH=</span><br></pre></td></tr></table></figure>
-<p>然后回过头去编译glibc。编译通过，<code>make &amp;&amp; make install</code>安装 重新添加LD_LIBRARY_PATH。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vim /etc/profile</span><br><span class="line">export LD_LIBRARY_PATH=$LD_LIBRARY_PATH[刚复制的路径]</span><br><span class="line"></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
-<p>有个要点，千万不要加空格。不然一会儿就<code>ls</code>都用不了了，系统会崩。会 段错误(吐核)。</p>
-<p><strong>PS: 简单起见，<code>conda install nodejs</code>解决一切问题。（笑</strong></p>
-]]></content>
-      <tags>
-        <tag>气宗</tag>
-        <tag>工欲善其事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>A personal site basing on github</title>
-    <url>/posts/a59c950b.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>概率的性质</title>
-    <url>/posts/506cea2e.html</url>
-    <content><![CDATA[<ol>
-<li>可加性、2. 连续性、3. 单调性<br><strong>加法公式</strong><br>对任意两个事件A、B，有：<br>$$P(A \cup B) &#x3D; P(A) + P(A) -P(AB)$$<br>一般地，对于任意n个事件$A_1,A_2,\dots,A_n,$有：<br>$$P\left( \bigcup^n_{i&#x3D;1}A_i\right) &#x3D; \sum_{i&#x3D;1}^nP(A_i)-\sum_{1\leq i &lt; j \le n }P(A_iA_j) + \sum_{1\leq i &lt; j  &lt; k \le n }P(A_iA_jA_k) + \dots + (-1)^{n-1}P(A_1A_2\dots A_n)$$<br>半可加性：<br>对任意两个事件，有：<br>$$P(A \cup B) \leq P(A) + P(B)$$</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>内力</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>条件概率</title>
-    <url>/posts/25dc542d.html</url>
-    <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
-<p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
-]]></content>
-      <tags>
-        <tag>内力</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Deploy Hexo on another computer</title>
-    <url>/posts/2567506c.html</url>
-    <content><![CDATA[<p>在另一台电脑上部署一下Hexo。<br>利用git分支来同步hexo。<br>main branch放静态页面文件<br>hexo branch放源码</p>
-<ol>
-<li>设置hexo branch为default branch</li>
-<li>在老电脑上push源文件到hexo branch</li>
-<li>在新电脑上clone hexo branch到本地</li>
-<li>在新电脑上安装hexo环境</li>
-<li>在新电脑上推送源码到hexo branch，生成的静态页面仍推送到main branch，就是这么神奇</li>
-<li>使用git add . &amp;&amp; git commit -m “message” &amp;&amp; git push 更新源文件</li>
-<li>使用hexo clean &amp;&amp; hexo g &amp;&amp; hexo d推送静态到main</li>
-<li>然后报了个错，看了一下主题文件夹是空的，copy一下主题过来，hexo d，完成</li>
-<li>每次使用前pull一下以保证同步</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>气宗</tag>
-        <tag>工欲善其事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>= =|||死都不输出的awk</title>
-    <url>/posts/12b473ed.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<p>在用JupyterLab做查字典的时候，发现死都不输出，给ChatGPT验代码能通过，跑demo能通过。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">awk &#x27;NR==FNR&#123;a[$3]=$0;next&#125; NR&gt;FNR&#123;if($1 in a) print a[$1]&#125;&#x27; file1 file2 &gt; file3</span><br></pre></td></tr></table></figure>
-<p>但就是死都不输出，挨个换输入文件发现问题出在字典里。<br>字典是直接从电脑通过JupyterLab拷贝过去的。可能出了和^M那个一样的莫名奇妙的问题。所以手动复制一个副本，愉快跑通。</p>
-]]></content>
-      <tags>
-        <tag>气宗</tag>
       </tags>
   </entry>
   <entry>
