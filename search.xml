@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>深度神经网络名词解释</title>
-    <url>/posts/85c7aca4.html</url>
-    <content><![CDATA[<p><strong>反向传播</strong>（英语：Backpropagation，意为误差反向传播，缩写为BP）<br>是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。</p>
-<p><strong>张量</strong>（英语：Tensor）是一个可用来表示在一些向量、标量和其他张量之间的线性关系的多线性函数，这些线性关系的基本例子有内积、外积、线性映射以及笛卡儿积。其坐标在$n$维空间内，有$n^r$个分量的一种量，其中每个分量都是坐标的函数，而在坐标变换时，这些分量也依照某些规则作线性变换。$r$称为该张量的秩或阶（与矩阵的秩和阶均无关系）。</p>
-<p><strong>支持向量机</strong>（英语：support vector machine，常简称为SVM，又名支持向量网络）是在分类与回归分析中分析数据的监督式学习模型与相关的学习算法。给定一组训练实例，每个训练实例被标记为属于两个类别中的一个或另一个，SVM训练算法创建一个将新的实例分配给两个类别之一的模型，使其成为非概率二元线性分类器。SVM模型是将实例表示为空间中的点，这样映射就使得单独类别的实例被尽可能宽的明显的间隔分开。然后，将新的实例映射到同一空间，并基于它们落在间隔的哪一侧来预测所属类别。  </p>
-<p>除了进行线性分类之外，SVM还可以使用所谓的核技巧有效地进行非线性分类，将其输入隐式映射到高维特征空间中。</p>
-<p>当数据未被标记时，不能进行监督式学习，需要用非监督式学习，它会尝试找出数据到簇的自然聚类，并将新数据映射到这些已形成的簇。将支持向量机改进的聚类算法被称为支持向量聚类，当数据未被标记或者仅一些数据被标记时，支持向量聚类经常在工业应用中用作分类步骤的预处理。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>小无相功：pytorch</title>
-    <url>/posts/89838bc0.html</url>
-    <content><![CDATA[<p>看官网呗还等着我写推教学吗？</p>
+    <title>conda env下没有python</title>
+    <url>/posts/7e7d79c3.html</url>
+    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
+<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
 ]]></content>
   </entry>
   <entry>
@@ -83,6 +74,22 @@
       </tags>
   </entry>
   <entry>
+    <title>小无相功：pytorch</title>
+    <url>/posts/89838bc0.html</url>
+    <content><![CDATA[<p>看官网呗还等着我写推教学吗？</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>深度神经网络名词解释</title>
+    <url>/posts/85c7aca4.html</url>
+    <content><![CDATA[<p><strong>反向传播</strong>（英语：Backpropagation，意为误差反向传播，缩写为BP）<br>是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。</p>
+<p><strong>张量</strong>（英语：Tensor）是一个可用来表示在一些向量、标量和其他张量之间的线性关系的多线性函数，这些线性关系的基本例子有内积、外积、线性映射以及笛卡儿积。其坐标在$n$维空间内，有$n^r$个分量的一种量，其中每个分量都是坐标的函数，而在坐标变换时，这些分量也依照某些规则作线性变换。$r$称为该张量的秩或阶（与矩阵的秩和阶均无关系）。</p>
+<p><strong>支持向量机</strong>（英语：support vector machine，常简称为SVM，又名支持向量网络）是在分类与回归分析中分析数据的监督式学习模型与相关的学习算法。给定一组训练实例，每个训练实例被标记为属于两个类别中的一个或另一个，SVM训练算法创建一个将新的实例分配给两个类别之一的模型，使其成为非概率二元线性分类器。SVM模型是将实例表示为空间中的点，这样映射就使得单独类别的实例被尽可能宽的明显的间隔分开。然后，将新的实例映射到同一空间，并基于它们落在间隔的哪一侧来预测所属类别。  </p>
+<p>除了进行线性分类之外，SVM还可以使用所谓的核技巧有效地进行非线性分类，将其输入隐式映射到高维特征空间中。</p>
+<p>当数据未被标记时，不能进行监督式学习，需要用非监督式学习，它会尝试找出数据到簇的自然聚类，并将新数据映射到这些已形成的簇。将支持向量机改进的聚类算法被称为支持向量聚类，当数据未被标记或者仅一些数据被标记时，支持向量聚类经常在工业应用中用作分类步骤的预处理。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>为什么向量化计算？</title>
     <url>/posts/8b99bfe9.html</url>
     <content><![CDATA[<p>向量化计算可以避免显式的for循环，<br>这样可以更好发挥CPU或者GPU的并行计算能力，从而极大提高计算效率。<br>所以线性代数是个好东西，本科是人都得学真是高瞻远瞩。</p>
@@ -96,106 +103,6 @@
       <tags>
         <tag>工欲善其事</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>CV吸星大法（一）：卷积神经网络CNN</title>
-    <url>/posts/9cab57d6.html</url>
-    <content><![CDATA[<h2 id="先整个原理！惯例，先上名词解释"><a href="#先整个原理！惯例，先上名词解释" class="headerlink" title="先整个原理！惯例，先上名词解释"></a>先整个原理！惯例，先上名词解释</h2><p><strong>人工神经网络（Aritificial Neural Network, ANN）</strong><br>简称神经网络（Neural Network, NN），简称神经网络。在机器学习和认知科学领域，是一种模仿生物神经网络（动物的中枢神经系统，特别是大脑）的结构和功能的数学模型或计算模型，用于对函数进行估计或近似。神经网络由大量的人工神经元联结进行计算。大多数情况下人工神经网络能在外界信息的基础上改变内部结构，是一种自适应系统，通俗地讲就是具备学习功能。<br>现代神经网络是一种非线性统计性数据建模工具，神经网络通常是通过一个基于数学统计学类型的学习方法（Learning Method）得以优化，所以也是数学统计学方法的一种实际应用，通过统计学的标准数学方法我们能够得到大量的可以用函数来表达的局部结构空间，另一方面在人工智能学的人工感知领域，我们通过数学统计学的应用可以来做人工感知方面的决定问题（也就是说通过统计学的方法，人工神经网络能够类似人一样具有简单的决定能力和简单的判断能力），这种方法比起正式的逻辑学推理演算更具有优势。</p>
-<p>和其他机器学习方法一样，神经网络已经被用于解决各种各样的问题，例如机器视觉和语音识别。这些问题都是很难被传统基于规则的编程所解决的。</p>
-<p>在人工神经网络中，简单的人工节点，称作神经元（neurons）</p>
-<p>人工神经网络目前没有一个统一的正式定义。不过，具有下列特点的统计模型可以被称作是“神经化”的：</p>
-<ul>
-<li>具有一组可以被调节的权重（被学习算法调节的数值参数）</li>
-<li>可以估计输入数据的非线性函数关系</li>
-</ul>
-<p>这些可调节的权重可以被看做神经元之间的连接强度。</p>
-<p>人工神经网络与生物神经网络的相似之处在于，它可以集体地、并行地计算函数的各个部分，而不需要描述每一个单元的特定任务。神经网络这个词一般指统计学、认知心理学和人工智能领域使用的模型，而控制中央神经系统的神经网络属于理论神经科学和计算神经科学。</p>
-<p>典型的人工神经网络具有以下三个部分：</p>
-<p><strong>结构（Architecture）</strong> 结构指定了网络中的变量和它们的拓扑关系。例如，神经网络中的变量可以是神经元连接的权重（weights）和神经元的激励值（activities of the neurons）。</p>
-<p><strong>激励函数（Activation Rule）</strong> 大部分神经网络模型具有一个短时间尺度的动力学规则，来定义神经元如何根据其他神经元的活动来改变自己的激励值。一般激励函数依赖于网络中的权重（即该网络的参数）。  </p>
-<p><strong>学习规则（Learning Rule）</strong> 学习规则指定了网络中的权重如何随着时间推进而调整。这一般被看做是一种长时间尺度的动力学规则。一般情况下，学习规则依赖于神经元的激励值。它也可能依赖于监督者提供的目标值和当前权重的值。例如，用于手写识别的一个神经网络，有一组输入神经元。输入神经元会被输入图像的数据所激发。在激励值被加权并通过一个函数（由网络的设计者确定）后，这些神经元的激励值被传递到其他神经元。这个过程不断重复，直到输出神经元被激发。最后，输出神经元的激励值决定了识别出来的是哪个字母。</p>
-<p>单个神经元的功能是求得输入向量与权向量的内积后，经一个非线性传递函数得到一个标量结果。</p>
-<p>单个神经元的作用：把一个n维向量空间用一个超平面分割成两部分（称之为判断边界），给定一个输入向量，神经元可以判断出这个向量位于超平面的哪一边。</p>
-<p>该超平面的方程：<br>$$ \vec{W’}\vec p + b &#x3D; 0$$</p>
-<ul>
-<li>$\vec{W’}$ 权向量</li>
-<li>$b$ 偏置</li>
-<li>$\vec p$ 超平面上的向量</li>
-</ul>
-<p>人工神经网络分类：</p>
-<ol>
-<li>依学习策略（Algorithm）分类主要有：</li>
-</ol>
-<ul>
-<li>监督式学习网络（Supervised Learning Network）为主<br>  无监督式学习网络（Unsupervised Learning Network）</li>
-<li>混合式学习网络（Hybrid Learning Network）</li>
-<li>联想式学习网络（Associate Learning Network）<br>最适化学习网络（Optimization Application Network）</li>
-</ul>
-<ol start="2">
-<li>依网络架构（Connectionism）分类主要有：</li>
-</ol>
-<ul>
-<li>前馈神经网络（Feed Forward Network）</li>
-<li>循环神经网络（Recurrent Network）</li>
-<li>强化式架构（Reinforcement Network）</li>
-</ul>
-<p><strong>卷积神经网络（Convolutional Neural Network, CNN）</strong><br>一种前馈神经网络。它的人工神经元可以响应一部分覆盖范围内的周围单元，对于大型图像处理有出色表现。<br>卷积神经网络由一个或多个卷积层和顶端的全连通层（对应经典的神经网络）组成，同时也包括关联权重和池化层（pooling layer）。这一结构使得卷积神经网络能够利用输入数据的二维结构。与其他深度学习结构相比，卷积神经网络在图像和语音识别方面能够给出更好的结果。这一模型也可以使用反向传播算法进行训练。相比较其他深度、前馈神经网络，卷积神经网络需要考量的参数更少，使之成为一种颇具吸引力的深度学习结构。<br>卷积神经网络的灵感来自于动物视觉皮层组织的神经连接方式。单个神经元只对有限区域内的刺激作出反应，不同神经元的感知区域相互重叠从而覆盖整个视野。</p>
-<h3 id="卷积神经网络的结构"><a href="#卷积神经网络的结构" class="headerlink" title="卷积神经网络的结构"></a>卷积神经网络的结构</h3><p>卷积神经网络由输入层、隐藏层和输出层组成。</p>
-<p><strong>卷积层</strong><br>卷积层可以产生一组平行的特征图（feature map），它通过在输入图像上滑动不同的卷积核并执行一定的运算而组成。</p>
-<p><strong>线性整流层</strong><br>线性整流层（Rectified Linear Units layer, ReLU layer）使用线性整流（Rectified Linear Units, ReLU）<br>$$ f(x)&#x3D;max(0,x)$$<br>作为这一层神经的激励函数（Activation function）。它可以增强判定函数和整个神经网络的非线性特性，而本身并不会改变卷积层。<br>事实上，其他的一些函数也可以用于增强网络的非线性特征，如双曲正切函数<br>$$f(x)&#x3D;tanh(x),<br>f(x)&#x3D;|tanh(x)|$$<br>或者Sigmoid函数<br>$$f(x)&#x3D;(1+e^{-x})^{-1}$$<br>相比其它函数来说，ReLU函数更受青睐，这是因为它可以将神经网络的训练速度提升数倍，而并不会对模型的泛化准确度造成显著影响。</p>
-<p><strong>池化层</strong><br>池化（Pooling）是卷积神经网络中另一个重要的概念，它实际上是一种非线性形式的降采样。有多种不同形式的非线性池化函数，而其中“最大池化（Max pooling）”是最为常见的。它是将输入的图像划分为若干个矩形区域，对每个子区域输出最大值。</p>
-<p>直觉上，这种机制能够有效地原因在于，一个特征的精确位置远不及它相对于其他特征的粗略位置重要。池化层会不断地减小数据的空间大小，因此参数的数量和计算量也会下降，这在一定程度上也控制了过拟合。通常来说，CNN的网络结构中的卷积层之间都会周期性地插入池化层。池化操作提供了另一种形式的平移不变性。因为卷积核是一种特征发现器，我们通过卷积层可以很容易地发现图像中的各种边缘。但是卷积层发现的特征往往过于精确，我们即使高速连拍拍摄一个物体，照片中的物体的边缘像素位置也不大可能完全一致，通过池化层我们可以降低卷积层对边缘的敏感性。</p>
-<p>池化层每次在一个池化窗口（depth slice）上计算输出，然后根据步幅移动池化窗口。下图是目前最常用的池化层，步幅为2，池化窗口为2×2的二维最大池化层。每隔2个元素从图像划分出2×2的区块，然后对每个区块中的4个数取最大值。这将会减少75%的数据量。</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Max_pooling.png" alt="Alt text"></p>
-<p>$$f_{X,Y}(S)&#x3D;\mathop{max}\limits^1_{a,b&#x3D;0}S_{2X+a, 2Y+b}$$</p>
-<p>除了最大池化之外，池化层也可以使用其他池化函数，例如“平均池化”甚至“L2-范数池化”等。过去，平均池化的使用曾经较为广泛，但是最近由于最大池化在实践中的表现更好，平均池化已经不太常用。</p>
-<p>由于池化层过快地减少了数据的大小，目前文献中的趋势是使用较小的池化滤镜，[4]甚至不再使用池化层。[5]</p>
-<p>RoI池化(Region of Interest)是最大池化的变体，其中输出大小是固定的，输入矩形是一个参数。[6]</p>
-<p>池化层是基于 Fast-RCNN [7]架构的卷积神经网络的一个重要组成部分。</p>
-<p><strong>完全连接层</strong><br>最后，在经过几个卷积和最大池化层之后，神经网络中的高级推理通过完全连接层来完成。就和常规的非卷积人工神经网络中一样，完全连接层中的神经元与前一层中的所有激活都有联系。因此，它们的激活可以作为仿射变换来计算，也就是先乘以一个矩阵然后加上一个偏差(bias)偏移量(向量加上一个固定的或者学习来的偏差量)。</p>
-<p><strong>微调（fine-tuning）</strong><br>卷积神经网络（例如Alexnet、VGG网络）在网络的最后通常为softmax分类器。微调一般用来调整softmax分类器的分类数。例如原网络可以分类出2种图像，需要增加1个新的分类从而使网络可以分类出3种图像。微调（fine-tuning）可以留用之前训练的大多数参数，从而达到快速训练收敛的效果。例如保留各个卷积层，只重构卷积层后的全连接层与softmax层即可。</p>
-<h2 id="好了朋友-你为什么要用卷积神经网络呢"><a href="#好了朋友-你为什么要用卷积神经网络呢" class="headerlink" title="好了朋友 你为什么要用卷积神经网络呢"></a>好了朋友 你为什么要用卷积神经网络呢</h2><p>在 CNN 出现之前，图像对于人工智能来说是一个难题，有2个原因：</p>
-<ol>
-<li>图像需要处理的数据量太大，导致成本很高，效率很低</li>
-<li>图像在数字化的过程中很难保留原有的特征，导致图像处理的准确率不高</li>
-</ol>
-<p>卷积神经网络 – CNN 解决的第一个问题就是“将复杂问题简化”，把大量参数降维成少量参数，再做处理。</p>
-<p>更重要的是：我们在大部分场景下，降维并不会影响结果。比如1000像素的图片缩小成200像素，并不影响肉眼认出来图片中是一只猫还是一只狗，机器也是如此。</p>
-<p><img src="https://easyai.tech/wp-content/uploads/2022/08/98412-2019-06-12-tuxiangtx.png.webp" alt="Alt text"></p>
-<p>假如有圆形是1，没有圆形是0，那么圆形的位置不同就会产生完全不同的数据表达。但是从视觉的角度来看，图像的内容（本质）并没有发生变化，只是位置发生了变化。</p>
-<p>CNN 用类似视觉的方式保留了图像的特征，当图像做翻转，旋转或者变换位置时，它也能有效的识别出来是类似的图像。</p>
-<p>典型的 CNN 由3个部分构成：</p>
-<ul>
-<li>卷积层（提取特征）</li>
-<li>池化层（下采样，数据降维）</li>
-<li>全连接层（输出结果）</li>
-</ul>
-<p>如果简单来描述的话：</p>
-<p>卷积层负责提取图像中的局部特征；池化层用来大幅降低参数量级(降维)；全连接层类似传统神经网络的部分，用来输出想要的结果。</p>
-<p>其实有四大要件：</p>
-<ul>
-<li>卷积层（Conv Layer）</li>
-<li>非线性激励层（Non-linear Layer）</li>
-<li>池化层（Pooling Layer）</li>
-<li>输出层（Fully-connected Layer）</li>
-</ul>
-<p><strong>过拟合（overfitting）</strong><br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Overfitting.svg/1024px-Overfitting.svg.png" alt="Alt text"></p>
-<pre><code>绿线代表过适模型，黑线代表正则化模型。虽然绿线完美的符合训练数据，但调适得太过紧密或精确；并且与黑线相比，在新的测试资料上会有更高的错误率。
-</code></pre>
-<p>过拟合模型指的是相较有限的数据而言，参数过多或者结构过于复杂的统计模型。<br>过拟合最显著的后果就是在验证集上的效果很差。  </p>
-<p><strong>反向传播算法</strong><br>Backpropagation，意为误差反向传播，缩写为BP，是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。<br>反向传播算法（BP 算法）主要由两个阶段组成：激励传播与权重更新。</p>
-<p>第1阶段：激励传播<br>每次迭代中的传播环节包含两步：</p>
-<p>（前向传播阶段）将训练输入送入网络以获得预测结果；<br>（反向传播阶段）对预测结果同训练目标求差(损失函数)。<br>第2阶段：权重更新<br>对于每个突触上的权重，按照以下步骤进行更新：</p>
-<p>将输入激励和响应误差相乘，从而获得权重的梯度；<br>将这个梯度乘上一个比例并取反后加到权重上。<br>这个比例（百分比）将会影响到训练过程的速度和效果，因此成为“训练因子”。梯度的方向指明了误差扩大的方向，因此在更新权重的时候需要对其取反，从而减小权重引起的误差。</p>
-<p>第 1 和第 2 阶段可以反复循环迭代，直到网络对输入的响应达到满意的预定的目标范围为止。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>conda env下没有python</title>
-    <url>/posts/7e7d79c3.html</url>
-    <content><![CDATA[<p>一般用conda新建一个环境是这样的：<br><code>conda create -n your_env</code><br>那这个就不包含解释器<br>得这么整<br><code>conda create -n your_env python=3.9</code><br>那已经安装了一个空的咋办：<br><code>conda install -n your_env python</code></p>
-<p>ps: <code>-n</code> 是 <code>--name</code>的缩写</p>
-]]></content>
   </entry>
   <entry>
     <title>Deploy Hexo on another computer</title>
@@ -375,12 +282,107 @@
       </tags>
   </entry>
   <entry>
-    <title>A personal site basing on github</title>
-    <url>/posts/a59c950b.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
+    <title>CV吸星大法（一）：卷积神经网络CNN</title>
+    <url>/posts/9cab57d6.html</url>
+    <content><![CDATA[<h2 id="先整个原理！惯例，先上名词解释"><a href="#先整个原理！惯例，先上名词解释" class="headerlink" title="先整个原理！惯例，先上名词解释"></a>先整个原理！惯例，先上名词解释</h2><p><strong>人工神经网络（Aritificial Neural Network, ANN）</strong><br>简称神经网络（Neural Network, NN），简称神经网络。在机器学习和认知科学领域，是一种模仿生物神经网络（动物的中枢神经系统，特别是大脑）的结构和功能的数学模型或计算模型，用于对函数进行估计或近似。神经网络由大量的人工神经元联结进行计算。大多数情况下人工神经网络能在外界信息的基础上改变内部结构，是一种自适应系统，通俗地讲就是具备学习功能。<br>现代神经网络是一种非线性统计性数据建模工具，神经网络通常是通过一个基于数学统计学类型的学习方法（Learning Method）得以优化，所以也是数学统计学方法的一种实际应用，通过统计学的标准数学方法我们能够得到大量的可以用函数来表达的局部结构空间，另一方面在人工智能学的人工感知领域，我们通过数学统计学的应用可以来做人工感知方面的决定问题（也就是说通过统计学的方法，人工神经网络能够类似人一样具有简单的决定能力和简单的判断能力），这种方法比起正式的逻辑学推理演算更具有优势。</p>
+<p>和其他机器学习方法一样，神经网络已经被用于解决各种各样的问题，例如机器视觉和语音识别。这些问题都是很难被传统基于规则的编程所解决的。</p>
+<p>在人工神经网络中，简单的人工节点，称作神经元（neurons）</p>
+<p>人工神经网络目前没有一个统一的正式定义。不过，具有下列特点的统计模型可以被称作是“神经化”的：</p>
+<ul>
+<li>具有一组可以被调节的权重（被学习算法调节的数值参数）</li>
+<li>可以估计输入数据的非线性函数关系</li>
+</ul>
+<p>这些可调节的权重可以被看做神经元之间的连接强度。</p>
+<p>人工神经网络与生物神经网络的相似之处在于，它可以集体地、并行地计算函数的各个部分，而不需要描述每一个单元的特定任务。神经网络这个词一般指统计学、认知心理学和人工智能领域使用的模型，而控制中央神经系统的神经网络属于理论神经科学和计算神经科学。</p>
+<p>典型的人工神经网络具有以下三个部分：</p>
+<p><strong>结构（Architecture）</strong> 结构指定了网络中的变量和它们的拓扑关系。例如，神经网络中的变量可以是神经元连接的权重（weights）和神经元的激励值（activities of the neurons）。</p>
+<p><strong>激励函数（Activation Rule）</strong> 大部分神经网络模型具有一个短时间尺度的动力学规则，来定义神经元如何根据其他神经元的活动来改变自己的激励值。一般激励函数依赖于网络中的权重（即该网络的参数）。  </p>
+<p><strong>学习规则（Learning Rule）</strong> 学习规则指定了网络中的权重如何随着时间推进而调整。这一般被看做是一种长时间尺度的动力学规则。一般情况下，学习规则依赖于神经元的激励值。它也可能依赖于监督者提供的目标值和当前权重的值。例如，用于手写识别的一个神经网络，有一组输入神经元。输入神经元会被输入图像的数据所激发。在激励值被加权并通过一个函数（由网络的设计者确定）后，这些神经元的激励值被传递到其他神经元。这个过程不断重复，直到输出神经元被激发。最后，输出神经元的激励值决定了识别出来的是哪个字母。</p>
+<p>单个神经元的功能是求得输入向量与权向量的内积后，经一个非线性传递函数得到一个标量结果。</p>
+<p>单个神经元的作用：把一个n维向量空间用一个超平面分割成两部分（称之为判断边界），给定一个输入向量，神经元可以判断出这个向量位于超平面的哪一边。</p>
+<p>该超平面的方程：<br>$$ \vec{W’}\vec p + b &#x3D; 0$$</p>
+<ul>
+<li>$\vec{W’}$ 权向量</li>
+<li>$b$ 偏置</li>
+<li>$\vec p$ 超平面上的向量</li>
+</ul>
+<p>人工神经网络分类：</p>
+<ol>
+<li>依学习策略（Algorithm）分类主要有：</li>
+</ol>
+<ul>
+<li>监督式学习网络（Supervised Learning Network）为主<br>  无监督式学习网络（Unsupervised Learning Network）</li>
+<li>混合式学习网络（Hybrid Learning Network）</li>
+<li>联想式学习网络（Associate Learning Network）<br>最适化学习网络（Optimization Application Network）</li>
+</ul>
+<ol start="2">
+<li>依网络架构（Connectionism）分类主要有：</li>
+</ol>
+<ul>
+<li>前馈神经网络（Feed Forward Network）</li>
+<li>循环神经网络（Recurrent Network）</li>
+<li>强化式架构（Reinforcement Network）</li>
+</ul>
+<p><strong>卷积神经网络（Convolutional Neural Network, CNN）</strong><br>一种前馈神经网络。它的人工神经元可以响应一部分覆盖范围内的周围单元，对于大型图像处理有出色表现。<br>卷积神经网络由一个或多个卷积层和顶端的全连通层（对应经典的神经网络）组成，同时也包括关联权重和池化层（pooling layer）。这一结构使得卷积神经网络能够利用输入数据的二维结构。与其他深度学习结构相比，卷积神经网络在图像和语音识别方面能够给出更好的结果。这一模型也可以使用反向传播算法进行训练。相比较其他深度、前馈神经网络，卷积神经网络需要考量的参数更少，使之成为一种颇具吸引力的深度学习结构。<br>卷积神经网络的灵感来自于动物视觉皮层组织的神经连接方式。单个神经元只对有限区域内的刺激作出反应，不同神经元的感知区域相互重叠从而覆盖整个视野。</p>
+<h3 id="卷积神经网络的结构"><a href="#卷积神经网络的结构" class="headerlink" title="卷积神经网络的结构"></a>卷积神经网络的结构</h3><p>卷积神经网络由输入层、隐藏层和输出层组成。</p>
+<p><strong>卷积层</strong><br>卷积层可以产生一组平行的特征图（feature map），它通过在输入图像上滑动不同的卷积核并执行一定的运算而组成。</p>
+<p><strong>线性整流层</strong><br>线性整流层（Rectified Linear Units layer, ReLU layer）使用线性整流（Rectified Linear Units, ReLU）<br>$$ f(x)&#x3D;max(0,x)$$<br>作为这一层神经的激励函数（Activation function）。它可以增强判定函数和整个神经网络的非线性特性，而本身并不会改变卷积层。<br>事实上，其他的一些函数也可以用于增强网络的非线性特征，如双曲正切函数<br>$$f(x)&#x3D;tanh(x),<br>f(x)&#x3D;|tanh(x)|$$<br>或者Sigmoid函数<br>$$f(x)&#x3D;(1+e^{-x})^{-1}$$<br>相比其它函数来说，ReLU函数更受青睐，这是因为它可以将神经网络的训练速度提升数倍，而并不会对模型的泛化准确度造成显著影响。</p>
+<p><strong>池化层</strong><br>池化（Pooling）是卷积神经网络中另一个重要的概念，它实际上是一种非线性形式的降采样。有多种不同形式的非线性池化函数，而其中“最大池化（Max pooling）”是最为常见的。它是将输入的图像划分为若干个矩形区域，对每个子区域输出最大值。</p>
+<p>直觉上，这种机制能够有效地原因在于，一个特征的精确位置远不及它相对于其他特征的粗略位置重要。池化层会不断地减小数据的空间大小，因此参数的数量和计算量也会下降，这在一定程度上也控制了过拟合。通常来说，CNN的网络结构中的卷积层之间都会周期性地插入池化层。池化操作提供了另一种形式的平移不变性。因为卷积核是一种特征发现器，我们通过卷积层可以很容易地发现图像中的各种边缘。但是卷积层发现的特征往往过于精确，我们即使高速连拍拍摄一个物体，照片中的物体的边缘像素位置也不大可能完全一致，通过池化层我们可以降低卷积层对边缘的敏感性。</p>
+<p>池化层每次在一个池化窗口（depth slice）上计算输出，然后根据步幅移动池化窗口。下图是目前最常用的池化层，步幅为2，池化窗口为2×2的二维最大池化层。每隔2个元素从图像划分出2×2的区块，然后对每个区块中的4个数取最大值。这将会减少75%的数据量。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Max_pooling.png" alt="Alt text"></p>
+<p>$$f_{X,Y}(S)&#x3D;\mathop{max}\limits^1_{a,b&#x3D;0}S_{2X+a, 2Y+b}$$</p>
+<p>除了最大池化之外，池化层也可以使用其他池化函数，例如“平均池化”甚至“L2-范数池化”等。过去，平均池化的使用曾经较为广泛，但是最近由于最大池化在实践中的表现更好，平均池化已经不太常用。</p>
+<p>由于池化层过快地减少了数据的大小，目前文献中的趋势是使用较小的池化滤镜，[4]甚至不再使用池化层。[5]</p>
+<p>RoI池化(Region of Interest)是最大池化的变体，其中输出大小是固定的，输入矩形是一个参数。[6]</p>
+<p>池化层是基于 Fast-RCNN [7]架构的卷积神经网络的一个重要组成部分。</p>
+<p><strong>完全连接层</strong><br>最后，在经过几个卷积和最大池化层之后，神经网络中的高级推理通过完全连接层来完成。就和常规的非卷积人工神经网络中一样，完全连接层中的神经元与前一层中的所有激活都有联系。因此，它们的激活可以作为仿射变换来计算，也就是先乘以一个矩阵然后加上一个偏差(bias)偏移量(向量加上一个固定的或者学习来的偏差量)。</p>
+<p><strong>微调（fine-tuning）</strong><br>卷积神经网络（例如Alexnet、VGG网络）在网络的最后通常为softmax分类器。微调一般用来调整softmax分类器的分类数。例如原网络可以分类出2种图像，需要增加1个新的分类从而使网络可以分类出3种图像。微调（fine-tuning）可以留用之前训练的大多数参数，从而达到快速训练收敛的效果。例如保留各个卷积层，只重构卷积层后的全连接层与softmax层即可。</p>
+<h2 id="好了朋友-你为什么要用卷积神经网络呢"><a href="#好了朋友-你为什么要用卷积神经网络呢" class="headerlink" title="好了朋友 你为什么要用卷积神经网络呢"></a>好了朋友 你为什么要用卷积神经网络呢</h2><p>在 CNN 出现之前，图像对于人工智能来说是一个难题，有2个原因：</p>
+<ol>
+<li>图像需要处理的数据量太大，导致成本很高，效率很低</li>
+<li>图像在数字化的过程中很难保留原有的特征，导致图像处理的准确率不高</li>
+</ol>
+<p>卷积神经网络 – CNN 解决的第一个问题就是“将复杂问题简化”，把大量参数降维成少量参数，再做处理。</p>
+<p>更重要的是：我们在大部分场景下，降维并不会影响结果。比如1000像素的图片缩小成200像素，并不影响肉眼认出来图片中是一只猫还是一只狗，机器也是如此。</p>
+<p><img src="https://easyai.tech/wp-content/uploads/2022/08/98412-2019-06-12-tuxiangtx.png.webp" alt="Alt text"></p>
+<p>假如有圆形是1，没有圆形是0，那么圆形的位置不同就会产生完全不同的数据表达。但是从视觉的角度来看，图像的内容（本质）并没有发生变化，只是位置发生了变化。</p>
+<p>CNN 用类似视觉的方式保留了图像的特征，当图像做翻转，旋转或者变换位置时，它也能有效的识别出来是类似的图像。</p>
+<p>典型的 CNN 由3个部分构成：</p>
+<ul>
+<li>卷积层（提取特征）</li>
+<li>池化层（下采样，数据降维）</li>
+<li>全连接层（输出结果）</li>
+</ul>
+<p>如果简单来描述的话：</p>
+<p>卷积层负责提取图像中的局部特征；池化层用来大幅降低参数量级(降维)；全连接层类似传统神经网络的部分，用来输出想要的结果。</p>
+<p>其实有四大要件：</p>
+<ul>
+<li>卷积层（Conv Layer）</li>
+<li>非线性激励层（Non-linear Layer）</li>
+<li>池化层（Pooling Layer）</li>
+<li>输出层（Fully-connected Layer）</li>
+</ul>
+<p><strong>过拟合（overfitting）</strong><br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Overfitting.svg/1024px-Overfitting.svg.png" alt="Alt text"></p>
+<pre><code>绿线代表过适模型，黑线代表正则化模型。虽然绿线完美的符合训练数据，但调适得太过紧密或精确；并且与黑线相比，在新的测试资料上会有更高的错误率。
+</code></pre>
+<p>过拟合模型指的是相较有限的数据而言，参数过多或者结构过于复杂的统计模型。<br>过拟合最显著的后果就是在验证集上的效果很差。  </p>
+<p><strong>反向传播算法</strong><br>Backpropagation，意为误差反向传播，缩写为BP，是对多层人工神经网络进行梯度下降的算法，也就是用链式法则以网络每层的权重为变量计算损失函数的梯度，以更新权重来最小化损失函数。<br>反向传播算法（BP 算法）主要由两个阶段组成：激励传播与权重更新。</p>
+<p>第1阶段：激励传播<br>每次迭代中的传播环节包含两步：</p>
+<p>（前向传播阶段）将训练输入送入网络以获得预测结果；<br>（反向传播阶段）对预测结果同训练目标求差(损失函数)。<br>第2阶段：权重更新<br>对于每个突触上的权重，按照以下步骤进行更新：</p>
+<p>将输入激励和响应误差相乘，从而获得权重的梯度；<br>将这个梯度乘上一个比例并取反后加到权重上。<br>这个比例（百分比）将会影响到训练过程的速度和效果，因此成为“训练因子”。梯度的方向指明了误差扩大的方向，因此在更新权重的时候需要对其取反，从而减小权重引起的误差。</p>
+<p>第 1 和第 2 阶段可以反复循环迭代，直到网络对输入的响应达到满意的预定的目标范围为止。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>条件概率</title>
+    <url>/posts/25dc542d.html</url>
+    <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
+<p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
+]]></content>
+      <tags>
+        <tag>内力</tag>
+      </tags>
   </entry>
   <entry>
     <title>Install Nodejs &amp; npm on CentOS</title>
@@ -411,16 +413,6 @@
       </tags>
   </entry>
   <entry>
-    <title>条件概率</title>
-    <url>/posts/25dc542d.html</url>
-    <content><![CDATA[<p>A、B为样本空间$\varOmega$中两事件，若P(B)&gt;0，则称：<br>$$P(A|B)&#x3D;\frac{P(AB)}{P(B)}$$<br>为“在B发生下A的条件概率”，简称条件概率。</p>
-<p>乘法公式：<br>若$P(B)&gt;0$，则：<br>$$P(AB)&#x3D;P(B)P(A|B)$$</p>
-]]></content>
-      <tags>
-        <tag>内力</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>概率的性质</title>
     <url>/posts/506cea2e.html</url>
     <content><![CDATA[<ol>
@@ -432,17 +424,12 @@
       </tags>
   </entry>
   <entry>
-    <title>= =|||死都不输出的awk</title>
-    <url>/posts/12b473ed.html</url>
+    <title>A personal site basing on github</title>
+    <url>/posts/a59c950b.html</url>
     <content><![CDATA[<span id="more"></span>
 
-<p>在用JupyterLab做查字典的时候，发现死都不输出，给ChatGPT验代码能通过，跑demo能通过。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">awk &#x27;NR==FNR&#123;a[$3]=$0;next&#125; NR&gt;FNR&#123;if($1 in a) print a[$1]&#125;&#x27; file1 file2 &gt; file3</span><br></pre></td></tr></table></figure>
-<p>但就是死都不输出，挨个换输入文件发现问题出在字典里。<br>字典是直接从电脑通过JupyterLab拷贝过去的。可能出了和^M那个一样的莫名奇妙的问题。所以手动复制一个副本，愉快跑通。</p>
+<p>Welcome to my base. This is my first post. Hello world.<br>I have decided to post articles on my blog to pratice my English and document my life.<br>Because my English is poor, there are likely to be a lot of grammatical mistakes. But I believe that as time flies, I can improve my skills and express my ideas more freely.</p>
 ]]></content>
-      <tags>
-        <tag>气宗</tag>
-      </tags>
   </entry>
   <entry>
     <title>配置JupyterLab</title>
@@ -462,6 +449,19 @@
 会给一个网址，复制token填进去。</li>
 </ol>
 <p>关掉就kill掉jupyter进程就好了。</p>
+]]></content>
+      <tags>
+        <tag>气宗</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>= =|||死都不输出的awk</title>
+    <url>/posts/12b473ed.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<p>在用JupyterLab做查字典的时候，发现死都不输出，给ChatGPT验代码能通过，跑demo能通过。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">awk &#x27;NR==FNR&#123;a[$3]=$0;next&#125; NR&gt;FNR&#123;if($1 in a) print a[$1]&#125;&#x27; file1 file2 &gt; file3</span><br></pre></td></tr></table></figure>
+<p>但就是死都不输出，挨个换输入文件发现问题出在字典里。<br>字典是直接从电脑通过JupyterLab拷贝过去的。可能出了和^M那个一样的莫名奇妙的问题。所以手动复制一个副本，愉快跑通。</p>
 ]]></content>
       <tags>
         <tag>气宗</tag>
